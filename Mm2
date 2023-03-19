@@ -718,7 +718,7 @@ OpenClose.ImageColor3 = Color3.fromRGB(19, 130, 199)
 
 -- Scripts:
 
-local function YZNK_fake_script() -- ScreenGui.LocalScript 
+local function VIDJMK_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	while wait(.314) do
@@ -741,8 +741,8 @@ local function YZNK_fake_script() -- ScreenGui.LocalScript
 		end
 	end
 end
-coroutine.wrap(YZNK_fake_script)()
-local function VVSW_fake_script() -- Player.LocalScript 
+coroutine.wrap(VIDJMK_fake_script)()
+local function WRTQ_fake_script() -- Player.LocalScript 
 	local script = Instance.new('LocalScript', Player)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -764,8 +764,8 @@ local function VVSW_fake_script() -- Player.LocalScript
 		script.Parent.TextTransparency = 0
 	end)
 end
-coroutine.wrap(VVSW_fake_script)()
-local function QKAJ_fake_script() -- Credits.LocalScript 
+coroutine.wrap(WRTQ_fake_script)()
+local function SEMXXEM_fake_script() -- Credits.LocalScript 
 	local script = Instance.new('LocalScript', Credits)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -787,8 +787,8 @@ local function QKAJ_fake_script() -- Credits.LocalScript
 		script.Parent.TextTransparency = 0
 	end)
 end
-coroutine.wrap(QKAJ_fake_script)()
-local function ESXZHLA_fake_script() -- Settings.LocalScript 
+coroutine.wrap(SEMXXEM_fake_script)()
+local function BSCME_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -810,8 +810,8 @@ local function ESXZHLA_fake_script() -- Settings.LocalScript
 		script.Parent.TextTransparency = 0
 	end)
 end
-coroutine.wrap(ESXZHLA_fake_script)()
-local function WXWVU_fake_script() -- Combat.LocalScript 
+coroutine.wrap(BSCME_fake_script)()
+local function ZNTVQPI_fake_script() -- Combat.LocalScript 
 	local script = Instance.new('LocalScript', Combat)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -833,8 +833,8 @@ local function WXWVU_fake_script() -- Combat.LocalScript
 		script.Parent.TextTransparency = 0
 	end)
 end
-coroutine.wrap(WXWVU_fake_script)()
-local function MXOQAE_fake_script() -- GameMods.LocalScript 
+coroutine.wrap(ZNTVQPI_fake_script)()
+local function EIIUD_fake_script() -- GameMods.LocalScript 
 	local script = Instance.new('LocalScript', GameMods)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -856,24 +856,24 @@ local function MXOQAE_fake_script() -- GameMods.LocalScript
 		script.Parent.TextTransparency = 0
 	end)
 end
-coroutine.wrap(MXOQAE_fake_script)()
-local function TQWYWKW_fake_script() -- Show.LocalScript 
+coroutine.wrap(EIIUD_fake_script)()
+local function IYUUPHZ_fake_script() -- Show.LocalScript 
 	local script = Instance.new('LocalScript', Show)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(TQWYWKW_fake_script)()
-local function BEKVE_fake_script() -- OnOff.LocalScript 
+coroutine.wrap(IYUUPHZ_fake_script)()
+local function TIME_fake_script() -- OnOff.LocalScript 
 	local script = Instance.new('LocalScript', OnOff)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(BEKVE_fake_script)()
-local function MKCYNY_fake_script() -- OnOff.LocalScript 
+coroutine.wrap(TIME_fake_script)()
+local function DOAN_fake_script() -- OnOff.LocalScript 
 	local script = Instance.new('LocalScript', OnOff)
 
 	local tweenService = game:GetService("TweenService")
@@ -943,24 +943,24 @@ local function MKCYNY_fake_script() -- OnOff.LocalScript
 		end
 	end)
 end
-coroutine.wrap(MKCYNY_fake_script)()
-local function JPXIR_fake_script() -- Show_2.LocalScript 
+coroutine.wrap(DOAN_fake_script)()
+local function LVBMJKL_fake_script() -- Show_2.LocalScript 
 	local script = Instance.new('LocalScript', Show_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(JPXIR_fake_script)()
-local function ALWRVYO_fake_script() -- OnOff_2.LocalScript 
+coroutine.wrap(LVBMJKL_fake_script)()
+local function MYIGE_fake_script() -- OnOff_2.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(ALWRVYO_fake_script)()
-local function ZISXJMW_fake_script() -- OnOff_2.LocalScript 
+coroutine.wrap(MYIGE_fake_script)()
+local function IYBZNPA_fake_script() -- OnOff_2.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_2)
 
 	local speed
@@ -1088,24 +1088,24 @@ local function ZISXJMW_fake_script() -- OnOff_2.LocalScript
 	end)
 	walky()
 end
-coroutine.wrap(ZISXJMW_fake_script)()
-local function OUYN_fake_script() -- Show_3.LocalScript 
+coroutine.wrap(IYBZNPA_fake_script)()
+local function KYDCLAH_fake_script() -- Show_3.LocalScript 
 	local script = Instance.new('LocalScript', Show_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(OUYN_fake_script)()
-local function YJAWMRQ_fake_script() -- OnOff_3.LocalScript 
+coroutine.wrap(KYDCLAH_fake_script)()
+local function UKJIW_fake_script() -- OnOff_3.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(YJAWMRQ_fake_script)()
-local function IJOURXA_fake_script() -- OnOff_3.LocalScript 
+coroutine.wrap(UKJIW_fake_script)()
+local function ELEMPPZ_fake_script() -- OnOff_3.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_3)
 
 	local tweenService = game:GetService("TweenService")
@@ -1248,24 +1248,24 @@ local function IJOURXA_fake_script() -- OnOff_3.LocalScript
 	
 	flyX()
 end
-coroutine.wrap(IJOURXA_fake_script)()
-local function RRYVBEN_fake_script() -- Show_4.LocalScript 
+coroutine.wrap(ELEMPPZ_fake_script)()
+local function WIKHK_fake_script() -- Show_4.LocalScript 
 	local script = Instance.new('LocalScript', Show_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(RRYVBEN_fake_script)()
-local function MUYT_fake_script() -- OnOff_4.LocalScript 
+coroutine.wrap(WIKHK_fake_script)()
+local function DSBKCL_fake_script() -- OnOff_4.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(MUYT_fake_script)()
-local function RCJJT_fake_script() -- OnOff_4.LocalScript 
+coroutine.wrap(DSBKCL_fake_script)()
+local function KCZPFPZ_fake_script() -- OnOff_4.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_4)
 
 	local tweenService = game:GetService("TweenService")
@@ -1350,24 +1350,24 @@ local function RCJJT_fake_script() -- OnOff_4.LocalScript
 	
 	
 end
-coroutine.wrap(RCJJT_fake_script)()
-local function KCBLZ_fake_script() -- Show_5.LocalScript 
+coroutine.wrap(KCZPFPZ_fake_script)()
+local function QBYL_fake_script() -- Show_5.LocalScript 
 	local script = Instance.new('LocalScript', Show_5)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(KCBLZ_fake_script)()
-local function PZOHTX_fake_script() -- OnOff_5.LocalScript 
+coroutine.wrap(QBYL_fake_script)()
+local function FATCN_fake_script() -- OnOff_5.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_5)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(PZOHTX_fake_script)()
-local function OCMO_fake_script() -- OnOff_5.LocalScript 
+coroutine.wrap(FATCN_fake_script)()
+local function MHTG_fake_script() -- OnOff_5.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_5)
 
 	local tweenService = game:GetService("TweenService")
@@ -1449,8 +1449,8 @@ local function OCMO_fake_script() -- OnOff_5.LocalScript
 	
 	
 end
-coroutine.wrap(OCMO_fake_script)()
-local function HYINOFE_fake_script() -- Godmode.LocalScript 
+coroutine.wrap(MHTG_fake_script)()
+local function BBEZRY_fake_script() -- Godmode.LocalScript 
 	local script = Instance.new('LocalScript', Godmode)
 
 	local accessories = {}
@@ -1480,8 +1480,8 @@ local function HYINOFE_fake_script() -- Godmode.LocalScript
 		GodMode()
 	end)
 end
-coroutine.wrap(HYINOFE_fake_script)()
-local function HZBIKSZ_fake_script() -- GetGun.LocalScript 
+coroutine.wrap(BBEZRY_fake_script)()
+local function WCCADE_fake_script() -- GetGun.LocalScript 
 	local script = Instance.new('LocalScript', GetGun)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1512,8 +1512,8 @@ local function HZBIKSZ_fake_script() -- GetGun.LocalScript
 	
 	end)
 end
-coroutine.wrap(HZBIKSZ_fake_script)()
-local function HPLACNH_fake_script() -- TextLabel.LocalScript 
+coroutine.wrap(WCCADE_fake_script)()
+local function JKKW_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	
@@ -1529,8 +1529,8 @@ local function HPLACNH_fake_script() -- TextLabel.LocalScript
 	end
 	
 end
-coroutine.wrap(HPLACNH_fake_script)()
-local function ZOHI_fake_script() -- Removebarriers.LocalScript 
+coroutine.wrap(JKKW_fake_script)()
+local function OHEUMXC_fake_script() -- Removebarriers.LocalScript 
 	local script = Instance.new('LocalScript', Removebarriers)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1543,8 +1543,8 @@ local function ZOHI_fake_script() -- Removebarriers.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ZOHI_fake_script)()
-local function HXJK_fake_script() -- Killall.LocalScript 
+coroutine.wrap(OHEUMXC_fake_script)()
+local function WMYH_fake_script() -- Killall.LocalScript 
 	local script = Instance.new('LocalScript', Killall)
 
 	local roles
@@ -1619,24 +1619,24 @@ local function HXJK_fake_script() -- Killall.LocalScript
 		kill()
 	end)
 end
-coroutine.wrap(HXJK_fake_script)()
-local function SQGO_fake_script() -- Show_6.LocalScript 
+coroutine.wrap(WMYH_fake_script)()
+local function UNPCA_fake_script() -- Show_6.LocalScript 
 	local script = Instance.new('LocalScript', Show_6)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(SQGO_fake_script)()
-local function AESAEES_fake_script() -- OnOff_6.LocalScript 
+coroutine.wrap(UNPCA_fake_script)()
+local function OCOA_fake_script() -- OnOff_6.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_6)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(AESAEES_fake_script)()
-local function YESVNL_fake_script() -- OnOff_6.LocalScript 
+coroutine.wrap(OCOA_fake_script)()
+local function ZOLWLRO_fake_script() -- OnOff_6.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_6)
 
 	local tweenService = game:GetService("TweenService")
@@ -1777,16 +1777,34 @@ local function YESVNL_fake_script() -- OnOff_6.LocalScript
 	
 	end
 end
-coroutine.wrap(YESVNL_fake_script)()
-local function EBKCU_fake_script() -- Show_7.LocalScript 
+coroutine.wrap(ZOLWLRO_fake_script)()
+local function BMFKLP_fake_script() -- Chams.LocalScript 
+	local script = Instance.new('LocalScript', Chams)
+
+	-- Script generated by SimpleSpy - credits to exx#9394
+	local function a()
+		if script.Parent.CheckActive.Visible == true then
+			script.Parent.CheckActive.Visible = false
+			script.Parent.CheckActive.Visible = true
+		end
+	end
+	
+	while wait(5) do
+		a()
+	end
+	
+	
+end
+coroutine.wrap(BMFKLP_fake_script)()
+local function GPWKHIA_fake_script() -- Show_7.LocalScript 
 	local script = Instance.new('LocalScript', Show_7)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(EBKCU_fake_script)()
-local function UNTPNQV_fake_script() -- OnOff_7.LocalScript 
+coroutine.wrap(GPWKHIA_fake_script)()
+local function JSLTL_fake_script() -- OnOff_7.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_7)
 
 	local tweenService = game:GetService("TweenService")
@@ -1906,24 +1924,44 @@ local function UNTPNQV_fake_script() -- OnOff_7.LocalScript
 		end
 	end)
 end
-coroutine.wrap(UNTPNQV_fake_script)()
-local function BILH_fake_script() -- OnOff_7.LocalScript 
+coroutine.wrap(JSLTL_fake_script)()
+local function UUOLDR_fake_script() -- OnOff_7.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_7)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(BILH_fake_script)()
-local function QDNEFMM_fake_script() -- Show_8.LocalScript 
+coroutine.wrap(UUOLDR_fake_script)()
+local function MRTX_fake_script() -- ESP.LocalScript 
+	local script = Instance.new('LocalScript', ESP)
+
+	while wait(10) do
+		for _,v in pairs(game:GetService("Players"):GetPlayers()) do
+			if v ~= game:GetService("Players").LocalPlayer and v.Character and v.CharacterAppearanceLoaded then
+				if v.Character.Head then
+					if v.Character.Head.his then
+						if v.Character.Head.his.TextLabel.TextColor3 == Color3.fromRGB() then
+							local high = v.Character:FindFirstChild("Highlight")
+							high:Destroy()
+						end
+					end
+				end
+			end
+		end
+	end
+	
+end
+coroutine.wrap(MRTX_fake_script)()
+local function FISZL_fake_script() -- Show_8.LocalScript 
 	local script = Instance.new('LocalScript', Show_8)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(QDNEFMM_fake_script)()
-local function NTKBZHD_fake_script() -- OnOff_8.LocalScript 
+coroutine.wrap(FISZL_fake_script)()
+local function ZKQWO_fake_script() -- OnOff_8.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_8)
 
 	local tweenService = game:GetService("TweenService")
@@ -2011,16 +2049,16 @@ local function NTKBZHD_fake_script() -- OnOff_8.LocalScript
 		end	
 	end)
 end
-coroutine.wrap(NTKBZHD_fake_script)()
-local function MSVGDGJ_fake_script() -- OnOff_8.LocalScript 
+coroutine.wrap(ZKQWO_fake_script)()
+local function QAPX_fake_script() -- OnOff_8.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_8)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(MSVGDGJ_fake_script)()
-local function ZQGOM_fake_script() -- OpenClose.LocalScript 
+coroutine.wrap(QAPX_fake_script)()
+local function QAMQWYX_fake_script() -- OpenClose.LocalScript 
 	local script = Instance.new('LocalScript', OpenClose)
 
 	local TweenService = game:GetService("TweenService")
@@ -2068,10 +2106,10 @@ local function ZQGOM_fake_script() -- OpenClose.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ZQGOM_fake_script)()
-local function TFILNI_fake_script() -- TopBar.LocalScript 
+coroutine.wrap(QAMQWYX_fake_script)()
+local function LKRJQ_fake_script() -- TopBar.LocalScript 
 	local script = Instance.new('LocalScript', TopBar)
 
 	script.Parent.Draggable = true
 end
-coroutine.wrap(TFILNI_fake_script)()
+coroutine.wrap(LKRJQ_fake_script)()
