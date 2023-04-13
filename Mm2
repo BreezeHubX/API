@@ -58,46 +58,46 @@ local UICorner_19 = Instance.new("UICorner")
 local UICorner_20 = Instance.new("UICorner")
 local CheckActive_5 = Instance.new("ImageLabel")
 local GameMods_2 = Instance.new("ScrollingFrame")
-local Xray = Instance.new("TextButton")
+local TrapAll = Instance.new("TextButton")
 local OnOff_6 = Instance.new("TextButton")
 local UICorner_21 = Instance.new("UICorner")
 local Show_6 = Instance.new("TextButton")
 local UICorner_22 = Instance.new("UICorner")
 local UICorner_23 = Instance.new("UICorner")
 local CheckActive_6 = Instance.new("ImageLabel")
-local TrapAll = Instance.new("TextButton")
-local OnOff_7 = Instance.new("TextButton")
-local UICorner_24 = Instance.new("UICorner")
-local Show_7 = Instance.new("TextButton")
-local UICorner_25 = Instance.new("UICorner")
-local UICorner_26 = Instance.new("UICorner")
-local CheckActive_7 = Instance.new("ImageLabel")
 local Godmode = Instance.new("TextButton")
-local UICorner_27 = Instance.new("UICorner")
-local GetGun = Instance.new("TextButton")
-local UICorner_28 = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
+local UICorner_24 = Instance.new("UICorner")
 local Removebarriers = Instance.new("TextButton")
-local UICorner_29 = Instance.new("UICorner")
+local UICorner_25 = Instance.new("UICorner")
+local GetGun = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
 local Combat_2 = Instance.new("ScrollingFrame")
 local Killall = Instance.new("TextButton")
-local UICorner_30 = Instance.new("UICorner")
+local UICorner_27 = Instance.new("UICorner")
 local Settings_2 = Instance.new("ScrollingFrame")
 local Chams = Instance.new("TextButton")
+local OnOff_7 = Instance.new("TextButton")
+local UICorner_28 = Instance.new("UICorner")
+local Show_7 = Instance.new("TextButton")
+local UICorner_29 = Instance.new("UICorner")
+local UICorner_30 = Instance.new("UICorner")
+local CheckActive_7 = Instance.new("ImageLabel")
+local ESP = Instance.new("TextButton")
 local OnOff_8 = Instance.new("TextButton")
 local UICorner_31 = Instance.new("UICorner")
 local Show_8 = Instance.new("TextButton")
 local UICorner_32 = Instance.new("UICorner")
 local UICorner_33 = Instance.new("UICorner")
 local CheckActive_8 = Instance.new("ImageLabel")
-local ESP = Instance.new("TextButton")
+local Gunesp = Instance.new("TextButton")
 local OnOff_9 = Instance.new("TextButton")
 local UICorner_34 = Instance.new("UICorner")
 local Show_9 = Instance.new("TextButton")
 local UICorner_35 = Instance.new("UICorner")
 local UICorner_36 = Instance.new("UICorner")
 local CheckActive_9 = Instance.new("ImageLabel")
-local Gunesp = Instance.new("TextButton")
+local Xray = Instance.new("TextButton")
 local OnOff_10 = Instance.new("TextButton")
 local UICorner_37 = Instance.new("UICorner")
 local Show_10 = Instance.new("TextButton")
@@ -228,6 +228,7 @@ Player_2.Active = true
 Player_2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
 Player_2.BorderSizePixel = 0
 Player_2.Size = UDim2.new(0, 409, 0, 276)
+Player_2.Visible = false
 
 Walkspeed.Name = "Walkspeed"
 Walkspeed.Parent = Player_2
@@ -349,7 +350,7 @@ UICorner_11.Parent = Value_2
 FlyX.Name = "FlyX"
 FlyX.Parent = Player_2
 FlyX.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-FlyX.Position = UDim2.new(0, 0, 0.24981159, 0)
+FlyX.Position = UDim2.new(0, 0, 0.186000004, 0)
 FlyX.Size = UDim2.new(0, 390, 0, 28)
 FlyX.Font = Enum.Font.FredokaOne
 FlyX.Text = "Teleport Fly (x)"
@@ -395,7 +396,7 @@ CheckActive_3.Visible = false
 Noclip.Name = "Noclip"
 Noclip.Parent = Player_2
 Noclip.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Noclip.Position = UDim2.new(0, 0, 0.185000002, 0)
+Noclip.Position = UDim2.new(0, 0, 0.247999996, 0)
 Noclip.Size = UDim2.new(0, 390, 0, 28)
 Noclip.Font = Enum.Font.FredokaOne
 Noclip.Text = "Noclip"
@@ -441,10 +442,10 @@ CheckActive_4.Visible = false
 RealFly.Name = "RealFly"
 RealFly.Parent = Player_2
 RealFly.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-RealFly.Position = UDim2.new(0, 0, 0.123000003, 0)
+RealFly.Position = UDim2.new(0, 0, 0.123999998, 0)
 RealFly.Size = UDim2.new(0, 390, 0, 28)
 RealFly.Font = Enum.Font.FredokaOne
-RealFly.Text = "Normal Fly "
+RealFly.Text = "Fly"
 RealFly.TextColor3 = Color3.fromRGB(19, 130, 199)
 RealFly.TextSize = 32.000
 RealFly.TextXAlignment = Enum.TextXAlignment.Left
@@ -490,22 +491,21 @@ GameMods_2.Active = true
 GameMods_2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
 GameMods_2.BorderSizePixel = 0
 GameMods_2.Size = UDim2.new(0, 409, 0, 276)
-GameMods_2.Visible = false
 
-Xray.Name = "Xray"
-Xray.Parent = GameMods_2
-Xray.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Xray.Position = UDim2.new(0, 0, 0.0615942031, 0)
-Xray.Size = UDim2.new(0, 390, 0, 28)
-Xray.ZIndex = 2
-Xray.Font = Enum.Font.FredokaOne
-Xray.Text = "Xray"
-Xray.TextColor3 = Color3.fromRGB(19, 130, 199)
-Xray.TextSize = 32.000
-Xray.TextXAlignment = Enum.TextXAlignment.Left
+TrapAll.Name = "TrapAll"
+TrapAll.Parent = GameMods_2
+TrapAll.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TrapAll.Position = UDim2.new(0, 0, 0.123000003, 0)
+TrapAll.Size = UDim2.new(0, 390, 0, 28)
+TrapAll.ZIndex = 2
+TrapAll.Font = Enum.Font.FredokaOne
+TrapAll.Text = "Trap All"
+TrapAll.TextColor3 = Color3.fromRGB(19, 130, 199)
+TrapAll.TextSize = 32.000
+TrapAll.TextXAlignment = Enum.TextXAlignment.Left
 
 OnOff_6.Name = "OnOff"
-OnOff_6.Parent = Xray
+OnOff_6.Parent = TrapAll
 OnOff_6.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
 OnOff_6.BackgroundTransparency = 0.700
 OnOff_6.Position = UDim2.new(0.853999972, 0, 0.172000006, 0)
@@ -530,61 +530,14 @@ Show_6.TextSize = 14.000
 UICorner_22.CornerRadius = UDim.new(3, 5)
 UICorner_22.Parent = Show_6
 
-UICorner_23.Parent = Xray
+UICorner_23.Parent = TrapAll
 
 CheckActive_6.Name = "CheckActive"
-CheckActive_6.Parent = Xray
+CheckActive_6.Parent = TrapAll
 CheckActive_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 CheckActive_6.BackgroundTransparency = 1.000
 CheckActive_6.Size = UDim2.new(0, 100, 0, 100)
 CheckActive_6.Visible = false
-
-TrapAll.Name = "TrapAll"
-TrapAll.Parent = GameMods_2
-TrapAll.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TrapAll.Position = UDim2.new(0, 0, 0.123000003, 0)
-TrapAll.Size = UDim2.new(0, 390, 0, 28)
-TrapAll.ZIndex = 2
-TrapAll.Font = Enum.Font.FredokaOne
-TrapAll.Text = "Trap All"
-TrapAll.TextColor3 = Color3.fromRGB(19, 130, 199)
-TrapAll.TextSize = 32.000
-TrapAll.TextXAlignment = Enum.TextXAlignment.Left
-
-OnOff_7.Name = "OnOff"
-OnOff_7.Parent = TrapAll
-OnOff_7.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
-OnOff_7.BackgroundTransparency = 0.700
-OnOff_7.Position = UDim2.new(0.853999972, 0, 0.172000006, 0)
-OnOff_7.Size = UDim2.new(0, 40, 0, 18)
-OnOff_7.Font = Enum.Font.SourceSans
-OnOff_7.Text = ""
-OnOff_7.TextColor3 = Color3.fromRGB(0, 0, 0)
-OnOff_7.TextSize = 14.000
-
-UICorner_24.CornerRadius = UDim.new(3, 5)
-UICorner_24.Parent = OnOff_7
-
-Show_7.Name = "Show"
-Show_7.Parent = OnOff_7
-Show_7.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
-Show_7.Size = UDim2.new(0, 18, 0, 18)
-Show_7.Font = Enum.Font.SourceSans
-Show_7.Text = ""
-Show_7.TextColor3 = Color3.fromRGB(0, 0, 0)
-Show_7.TextSize = 14.000
-
-UICorner_25.CornerRadius = UDim.new(3, 5)
-UICorner_25.Parent = Show_7
-
-UICorner_26.Parent = TrapAll
-
-CheckActive_7.Name = "CheckActive"
-CheckActive_7.Parent = TrapAll
-CheckActive_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CheckActive_7.BackgroundTransparency = 1.000
-CheckActive_7.Size = UDim2.new(0, 100, 0, 100)
-CheckActive_7.Visible = false
 
 Godmode.Name = "Godmode"
 Godmode.Parent = GameMods_2
@@ -598,31 +551,7 @@ Godmode.TextColor3 = Color3.fromRGB(19, 130, 199)
 Godmode.TextSize = 32.000
 Godmode.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_27.Parent = Godmode
-
-GetGun.Name = "GetGun"
-GetGun.Parent = GameMods_2
-GetGun.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-GetGun.Position = UDim2.new(0, 0, 0.246000007, 0)
-GetGun.Size = UDim2.new(0, 390, 0, 28)
-GetGun.ZIndex = 2
-GetGun.Font = Enum.Font.FredokaOne
-GetGun.Text = "Grab Gun"
-GetGun.TextColor3 = Color3.fromRGB(19, 130, 199)
-GetGun.TextSize = 32.000
-GetGun.TextXAlignment = Enum.TextXAlignment.Left
-
-UICorner_28.Parent = GetGun
-
-TextLabel.Parent = GetGun
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.564642787, 0, 0, 0)
-TextLabel.Size = UDim2.new(0, 169, 0, 28)
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "Gun dropped = false"
-TextLabel.TextColor3 = Color3.fromRGB(193, 0, 0)
-TextLabel.TextSize = 14.000
+UICorner_24.Parent = Godmode
 
 Removebarriers.Name = "Removebarriers"
 Removebarriers.Parent = GameMods_2
@@ -636,7 +565,31 @@ Removebarriers.TextColor3 = Color3.fromRGB(19, 130, 199)
 Removebarriers.TextSize = 32.000
 Removebarriers.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_29.Parent = Removebarriers
+UICorner_25.Parent = Removebarriers
+
+GetGun.Name = "GetGun"
+GetGun.Parent = GameMods_2
+GetGun.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+GetGun.Position = UDim2.new(0, 0, 0.247999996, 0)
+GetGun.Size = UDim2.new(0, 390, 0, 28)
+GetGun.ZIndex = 2
+GetGun.Font = Enum.Font.FredokaOne
+GetGun.Text = "Grab Gun"
+GetGun.TextColor3 = Color3.fromRGB(19, 130, 199)
+GetGun.TextSize = 32.000
+GetGun.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_26.Parent = GetGun
+
+TextLabel.Parent = GetGun
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.564642787, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 169, 0, 28)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Gun dropped = false"
+TextLabel.TextColor3 = Color3.fromRGB(193, 0, 0)
+TextLabel.TextSize = 14.000
 
 Combat_2.Name = "Combat"
 Combat_2.Parent = GameScrollingFrames
@@ -657,7 +610,7 @@ Killall.TextColor3 = Color3.fromRGB(19, 130, 199)
 Killall.TextSize = 32.000
 Killall.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_30.Parent = Killall
+UICorner_27.Parent = Killall
 
 Settings_2.Name = "Settings"
 Settings_2.Parent = GameScrollingFrames
@@ -679,8 +632,54 @@ Chams.TextColor3 = Color3.fromRGB(19, 130, 199)
 Chams.TextSize = 32.000
 Chams.TextXAlignment = Enum.TextXAlignment.Left
 
+OnOff_7.Name = "OnOff"
+OnOff_7.Parent = Chams
+OnOff_7.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
+OnOff_7.BackgroundTransparency = 0.700
+OnOff_7.Position = UDim2.new(0.853999972, 0, 0.172000006, 0)
+OnOff_7.Size = UDim2.new(0, 40, 0, 18)
+OnOff_7.Font = Enum.Font.SourceSans
+OnOff_7.Text = ""
+OnOff_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+OnOff_7.TextSize = 14.000
+
+UICorner_28.CornerRadius = UDim.new(3, 5)
+UICorner_28.Parent = OnOff_7
+
+Show_7.Name = "Show"
+Show_7.Parent = OnOff_7
+Show_7.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
+Show_7.Size = UDim2.new(0, 18, 0, 18)
+Show_7.Font = Enum.Font.SourceSans
+Show_7.Text = ""
+Show_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+Show_7.TextSize = 14.000
+
+UICorner_29.CornerRadius = UDim.new(3, 5)
+UICorner_29.Parent = Show_7
+
+UICorner_30.Parent = Chams
+
+CheckActive_7.Name = "CheckActive"
+CheckActive_7.Parent = Chams
+CheckActive_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CheckActive_7.BackgroundTransparency = 1.000
+CheckActive_7.Size = UDim2.new(0, 100, 0, 100)
+CheckActive_7.Visible = false
+
+ESP.Name = "ESP"
+ESP.Parent = Settings_2
+ESP.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ESP.Size = UDim2.new(0, 390, 0, 28)
+ESP.ZIndex = 2
+ESP.Font = Enum.Font.FredokaOne
+ESP.Text = " ESP"
+ESP.TextColor3 = Color3.fromRGB(19, 130, 199)
+ESP.TextSize = 32.000
+ESP.TextXAlignment = Enum.TextXAlignment.Left
+
 OnOff_8.Name = "OnOff"
-OnOff_8.Parent = Chams
+OnOff_8.Parent = ESP
 OnOff_8.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
 OnOff_8.BackgroundTransparency = 0.700
 OnOff_8.Position = UDim2.new(0.853999972, 0, 0.172000006, 0)
@@ -705,28 +704,29 @@ Show_8.TextSize = 14.000
 UICorner_32.CornerRadius = UDim.new(3, 5)
 UICorner_32.Parent = Show_8
 
-UICorner_33.Parent = Chams
+UICorner_33.Parent = ESP
 
 CheckActive_8.Name = "CheckActive"
-CheckActive_8.Parent = Chams
+CheckActive_8.Parent = ESP
 CheckActive_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 CheckActive_8.BackgroundTransparency = 1.000
 CheckActive_8.Size = UDim2.new(0, 100, 0, 100)
 CheckActive_8.Visible = false
 
-ESP.Name = "ESP"
-ESP.Parent = Settings_2
-ESP.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-ESP.Size = UDim2.new(0, 390, 0, 28)
-ESP.ZIndex = 2
-ESP.Font = Enum.Font.FredokaOne
-ESP.Text = " ESP"
-ESP.TextColor3 = Color3.fromRGB(19, 130, 199)
-ESP.TextSize = 32.000
-ESP.TextXAlignment = Enum.TextXAlignment.Left
+Gunesp.Name = "Gunesp"
+Gunesp.Parent = Settings_2
+Gunesp.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Gunesp.Position = UDim2.new(0, 0, 0.123999998, 0)
+Gunesp.Size = UDim2.new(0, 390, 0, 28)
+Gunesp.ZIndex = 2
+Gunesp.Font = Enum.Font.FredokaOne
+Gunesp.Text = " Dropped gun ESP"
+Gunesp.TextColor3 = Color3.fromRGB(19, 130, 199)
+Gunesp.TextSize = 32.000
+Gunesp.TextXAlignment = Enum.TextXAlignment.Left
 
 OnOff_9.Name = "OnOff"
-OnOff_9.Parent = ESP
+OnOff_9.Parent = Gunesp
 OnOff_9.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
 OnOff_9.BackgroundTransparency = 0.700
 OnOff_9.Position = UDim2.new(0.853999972, 0, 0.172000006, 0)
@@ -751,29 +751,29 @@ Show_9.TextSize = 14.000
 UICorner_35.CornerRadius = UDim.new(3, 5)
 UICorner_35.Parent = Show_9
 
-UICorner_36.Parent = ESP
+UICorner_36.Parent = Gunesp
 
 CheckActive_9.Name = "CheckActive"
-CheckActive_9.Parent = ESP
+CheckActive_9.Parent = Gunesp
 CheckActive_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 CheckActive_9.BackgroundTransparency = 1.000
 CheckActive_9.Size = UDim2.new(0, 100, 0, 100)
 CheckActive_9.Visible = false
 
-Gunesp.Name = "Gunesp"
-Gunesp.Parent = Settings_2
-Gunesp.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Gunesp.Position = UDim2.new(0, 0, 0.123000003, 0)
-Gunesp.Size = UDim2.new(0, 390, 0, 28)
-Gunesp.ZIndex = 2
-Gunesp.Font = Enum.Font.FredokaOne
-Gunesp.Text = " Dropped gun ESP"
-Gunesp.TextColor3 = Color3.fromRGB(19, 130, 199)
-Gunesp.TextSize = 32.000
-Gunesp.TextXAlignment = Enum.TextXAlignment.Left
+Xray.Name = "Xray"
+Xray.Parent = Settings_2
+Xray.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Xray.Position = UDim2.new(0, 0, 0.186000004, 0)
+Xray.Size = UDim2.new(0, 390, 0, 28)
+Xray.ZIndex = 2
+Xray.Font = Enum.Font.FredokaOne
+Xray.Text = "Xray"
+Xray.TextColor3 = Color3.fromRGB(19, 130, 199)
+Xray.TextSize = 32.000
+Xray.TextXAlignment = Enum.TextXAlignment.Left
 
 OnOff_10.Name = "OnOff"
-OnOff_10.Parent = Gunesp
+OnOff_10.Parent = Xray
 OnOff_10.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
 OnOff_10.BackgroundTransparency = 0.700
 OnOff_10.Position = UDim2.new(0.853999972, 0, 0.172000006, 0)
@@ -798,10 +798,10 @@ Show_10.TextSize = 14.000
 UICorner_38.CornerRadius = UDim.new(3, 5)
 UICorner_38.Parent = Show_10
 
-UICorner_39.Parent = Gunesp
+UICorner_39.Parent = Xray
 
 CheckActive_10.Name = "CheckActive"
-CheckActive_10.Parent = Gunesp
+CheckActive_10.Parent = Xray
 CheckActive_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 CheckActive_10.BackgroundTransparency = 1.000
 CheckActive_10.Size = UDim2.new(0, 100, 0, 100)
@@ -826,7 +826,7 @@ OpenClose.ImageColor3 = Color3.fromRGB(19, 130, 199)
 
 -- Scripts:
 
-local function IAGUGHN_fake_script() -- SuperScreen.LocalScript 
+local function SXOW_fake_script() -- SuperScreen.LocalScript 
 	local script = Instance.new('LocalScript', SuperScreen)
 
 	while wait(3.14) do
@@ -844,8 +844,8 @@ local function IAGUGHN_fake_script() -- SuperScreen.LocalScript
 		end
 	end
 end
-coroutine.wrap(IAGUGHN_fake_script)()
-local function YJEX_fake_script() -- Player.LocalScript 
+coroutine.wrap(SXOW_fake_script)()
+local function QYKV_fake_script() -- Player.LocalScript 
 	local script = Instance.new('LocalScript', Player)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -867,8 +867,8 @@ local function YJEX_fake_script() -- Player.LocalScript
 		script.Parent.TextTransparency = 0
 	end)
 end
-coroutine.wrap(YJEX_fake_script)()
-local function MPCSST_fake_script() -- Credits.LocalScript 
+coroutine.wrap(QYKV_fake_script)()
+local function VVOBZ_fake_script() -- Credits.LocalScript 
 	local script = Instance.new('LocalScript', Credits)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -890,8 +890,8 @@ local function MPCSST_fake_script() -- Credits.LocalScript
 		script.Parent.TextTransparency = 0
 	end)
 end
-coroutine.wrap(MPCSST_fake_script)()
-local function QNOHJ_fake_script() -- Settings.LocalScript 
+coroutine.wrap(VVOBZ_fake_script)()
+local function BZGE_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -913,8 +913,8 @@ local function QNOHJ_fake_script() -- Settings.LocalScript
 		script.Parent.TextTransparency = 0
 	end)
 end
-coroutine.wrap(QNOHJ_fake_script)()
-local function PLWPDB_fake_script() -- Combat.LocalScript 
+coroutine.wrap(BZGE_fake_script)()
+local function FYYWXF_fake_script() -- Combat.LocalScript 
 	local script = Instance.new('LocalScript', Combat)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -936,8 +936,8 @@ local function PLWPDB_fake_script() -- Combat.LocalScript
 		script.Parent.TextTransparency = 0
 	end)
 end
-coroutine.wrap(PLWPDB_fake_script)()
-local function SAJGNN_fake_script() -- GameMods.LocalScript 
+coroutine.wrap(FYYWXF_fake_script)()
+local function OLIBYB_fake_script() -- GameMods.LocalScript 
 	local script = Instance.new('LocalScript', GameMods)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -959,24 +959,24 @@ local function SAJGNN_fake_script() -- GameMods.LocalScript
 		script.Parent.TextTransparency = 0
 	end)
 end
-coroutine.wrap(SAJGNN_fake_script)()
-local function MCJFE_fake_script() -- Show.LocalScript 
+coroutine.wrap(OLIBYB_fake_script)()
+local function RNSG_fake_script() -- Show.LocalScript 
 	local script = Instance.new('LocalScript', Show)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(MCJFE_fake_script)()
-local function FGKTKLR_fake_script() -- OnOff.LocalScript 
+coroutine.wrap(RNSG_fake_script)()
+local function OXSXMY_fake_script() -- OnOff.LocalScript 
 	local script = Instance.new('LocalScript', OnOff)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(FGKTKLR_fake_script)()
-local function AYPMENV_fake_script() -- OnOff.LocalScript 
+coroutine.wrap(OXSXMY_fake_script)()
+local function HJTQO_fake_script() -- OnOff.LocalScript 
 	local script = Instance.new('LocalScript', OnOff)
 
 	local tweenService = game:GetService("TweenService")
@@ -1046,24 +1046,24 @@ local function AYPMENV_fake_script() -- OnOff.LocalScript
 		end
 	end)
 end
-coroutine.wrap(AYPMENV_fake_script)()
-local function BLZVV_fake_script() -- Show_2.LocalScript 
+coroutine.wrap(HJTQO_fake_script)()
+local function PDZZH_fake_script() -- Show_2.LocalScript 
 	local script = Instance.new('LocalScript', Show_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(BLZVV_fake_script)()
-local function DGRZ_fake_script() -- OnOff_2.LocalScript 
+coroutine.wrap(PDZZH_fake_script)()
+local function KJKKYG_fake_script() -- OnOff_2.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(DGRZ_fake_script)()
-local function HGOJTVU_fake_script() -- OnOff_2.LocalScript 
+coroutine.wrap(KJKKYG_fake_script)()
+local function DVVEZ_fake_script() -- OnOff_2.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_2)
 
 	local speed
@@ -1191,24 +1191,24 @@ local function HGOJTVU_fake_script() -- OnOff_2.LocalScript
 	end)
 	walky()
 end
-coroutine.wrap(HGOJTVU_fake_script)()
-local function GGYQU_fake_script() -- Show_3.LocalScript 
+coroutine.wrap(DVVEZ_fake_script)()
+local function FSJC_fake_script() -- Show_3.LocalScript 
 	local script = Instance.new('LocalScript', Show_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(GGYQU_fake_script)()
-local function JANOG_fake_script() -- OnOff_3.LocalScript 
+coroutine.wrap(FSJC_fake_script)()
+local function MVDMTHR_fake_script() -- OnOff_3.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(JANOG_fake_script)()
-local function NJGCJ_fake_script() -- OnOff_3.LocalScript 
+coroutine.wrap(MVDMTHR_fake_script)()
+local function LWBFSS_fake_script() -- OnOff_3.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_3)
 
 	local tweenService = game:GetService("TweenService")
@@ -1351,24 +1351,24 @@ local function NJGCJ_fake_script() -- OnOff_3.LocalScript
 	
 	flyX()
 end
-coroutine.wrap(NJGCJ_fake_script)()
-local function JOQBXYN_fake_script() -- Show_4.LocalScript 
+coroutine.wrap(LWBFSS_fake_script)()
+local function WZWHAX_fake_script() -- Show_4.LocalScript 
 	local script = Instance.new('LocalScript', Show_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(JOQBXYN_fake_script)()
-local function WFEDJIX_fake_script() -- OnOff_4.LocalScript 
+coroutine.wrap(WZWHAX_fake_script)()
+local function UTBUNNM_fake_script() -- OnOff_4.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(WFEDJIX_fake_script)()
-local function YOZA_fake_script() -- OnOff_4.LocalScript 
+coroutine.wrap(UTBUNNM_fake_script)()
+local function TEDX_fake_script() -- OnOff_4.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_4)
 
 	local tweenService = game:GetService("TweenService")
@@ -1447,24 +1447,24 @@ local function YOZA_fake_script() -- OnOff_4.LocalScript
 		end)
 	end
 end
-coroutine.wrap(YOZA_fake_script)()
-local function ZURJ_fake_script() -- Show_5.LocalScript 
+coroutine.wrap(TEDX_fake_script)()
+local function QWPYZ_fake_script() -- Show_5.LocalScript 
 	local script = Instance.new('LocalScript', Show_5)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(ZURJ_fake_script)()
-local function MJFYEVF_fake_script() -- OnOff_5.LocalScript 
+coroutine.wrap(QWPYZ_fake_script)()
+local function SVVB_fake_script() -- OnOff_5.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_5)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(MJFYEVF_fake_script)()
-local function QJDSO_fake_script() -- OnOff_5.LocalScript 
+coroutine.wrap(SVVB_fake_script)()
+local function PKLLSR_fake_script() -- OnOff_5.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_5)
 
 	local tweenService = game:GetService("TweenService")
@@ -1615,127 +1615,25 @@ local function QJDSO_fake_script() -- OnOff_5.LocalScript
 	
 	
 end
-coroutine.wrap(QJDSO_fake_script)()
-local function KIQLZDY_fake_script() -- Show_6.LocalScript 
+coroutine.wrap(PKLLSR_fake_script)()
+local function UBPG_fake_script() -- Show_6.LocalScript 
 	local script = Instance.new('LocalScript', Show_6)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(KIQLZDY_fake_script)()
-local function VVRK_fake_script() -- OnOff_6.LocalScript 
+coroutine.wrap(UBPG_fake_script)()
+local function VSHBE_fake_script() -- OnOff_6.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_6)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(VVRK_fake_script)()
-local function HADNQLC_fake_script() -- OnOff_6.LocalScript 
+coroutine.wrap(VSHBE_fake_script)()
+local function FJQP_fake_script() -- OnOff_6.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_6)
-
-	local tweenService = game:GetService("TweenService")
-	
-	local active = false
-	
-	local t=false
-	
-	local function scan(z,t)
-		for _,i in pairs(z:GetChildren()) do
-			if i:IsA("BasePart") and not i.Parent:FindFirstChild("Humanoid") and not i.Parent.Parent:FindFirstChild("Humanoid") then
-				i.LocalTransparencyModifier=t
-			end
-	
-			scan(i,t)
-		end
-	end
-	
-	function x(v)
-		if v then
-			scan(workspace,0.5)
-		else
-			scan(workspace,0)
-		end
-	end
-	
-	script.Parent.Parent.CheckActive:GetPropertyChangedSignal("Visible"):Connect(function()
-		wait()
-		if script.Parent.Parent.CheckActive.Visible == true then
-			
-			local info1 = TweenInfo.new(
-				.2, -- Time animating
-				Enum.EasingStyle.Linear, -- EasingStyle
-				Enum.EasingDirection.Out, -- EasingDirection
-				0, -- Repitions
-				false, -- Reverse post tween?
-				0 -- Delay time
-			)
-			local goal1 = {
-				Position = UDim2.new(0.55, 0,0, 0)
-			}
-			local tween2 = tweenService:Create(script.Parent.Show, info1, goal1)
-			tween2:Play()
-			
-			script.Parent.Show.BackgroundColor3 = Color3.fromRGB(16, 209, 6)
-			script.Parent.BackgroundColor3 = Color3.fromRGB(16, 209, 6)
-			active = true
-			
-			t = true
-			x(t)
-			
-			
-		elseif script.Parent.Parent.CheckActive.Visible == false then
-			
-			local info2 = TweenInfo.new(
-				.2, -- Time animating
-				Enum.EasingStyle.Linear, -- EasingStyle
-				Enum.EasingDirection.Out, -- EasingDirection
-				0, -- Repitions
-				false, -- Reverse post tween?
-				0 -- Delay time
-			)
-			local goal2 = {
-				Position = UDim2.new(0, 0,0, 0)
-			}
-			local tween2 = tweenService:Create(script.Parent.Show, info2, goal2)
-			
-			tween2:Play()
-			script.Parent.Show.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
-			script.Parent.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
-			active = false
-			
-			t = false
-			x(t)
-		end
-	end)
-	
-	
-	
-	
-				
-	
-	
-end
-coroutine.wrap(HADNQLC_fake_script)()
-local function JMZD_fake_script() -- Show_7.LocalScript 
-	local script = Instance.new('LocalScript', Show_7)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.Parent.CheckActive.Visible
-	end)
-end
-coroutine.wrap(JMZD_fake_script)()
-local function FGZRXKG_fake_script() -- OnOff_7.LocalScript 
-	local script = Instance.new('LocalScript', OnOff_7)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.CheckActive.Visible
-	end)
-end
-coroutine.wrap(FGZRXKG_fake_script)()
-local function ZECXLF_fake_script() -- OnOff_7.LocalScript 
-	local script = Instance.new('LocalScript', OnOff_7)
 
 	local tweenService = game:GetService("TweenService")
 	
@@ -1816,8 +1714,8 @@ local function ZECXLF_fake_script() -- OnOff_7.LocalScript
 	
 	
 end
-coroutine.wrap(ZECXLF_fake_script)()
-local function ZVSDQN_fake_script() -- Godmode.LocalScript 
+coroutine.wrap(FJQP_fake_script)()
+local function GJFQEB_fake_script() -- Godmode.LocalScript 
 	local script = Instance.new('LocalScript', Godmode)
 
 	local accessories = {}
@@ -1847,8 +1745,22 @@ local function ZVSDQN_fake_script() -- Godmode.LocalScript
 		GodMode()
 	end)
 end
-coroutine.wrap(ZVSDQN_fake_script)()
-local function TKBHQTJ_fake_script() -- GetGun.LocalScript 
+coroutine.wrap(GJFQEB_fake_script)()
+local function QKZSJA_fake_script() -- Removebarriers.LocalScript 
+	local script = Instance.new('LocalScript', Removebarriers)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(game.Workspace:GetDescendants()) do
+			if v:IsA("Part") or v:IsA("BasePart") or v:IsA("MeshPart") then
+				if v.Transparency == 1 then
+					v.CanCollide = false
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(QKZSJA_fake_script)()
+local function TKWCJOZ_fake_script() -- GetGun.LocalScript 
 	local script = Instance.new('LocalScript', GetGun)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1879,8 +1791,8 @@ local function TKBHQTJ_fake_script() -- GetGun.LocalScript
 	
 	end)
 end
-coroutine.wrap(TKBHQTJ_fake_script)()
-local function CUYF_fake_script() -- TextLabel.LocalScript 
+coroutine.wrap(TKWCJOZ_fake_script)()
+local function OCXLK_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	
@@ -1896,25 +1808,12 @@ local function CUYF_fake_script() -- TextLabel.LocalScript
 	end
 	
 end
-coroutine.wrap(CUYF_fake_script)()
-local function HECUUCM_fake_script() -- Removebarriers.LocalScript 
-	local script = Instance.new('LocalScript', Removebarriers)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		for i,v in pairs(game.Workspace:GetDescendants()) do
-			if v:IsA("Part") or v:IsA("BasePart") or v:IsA("MeshPart") then
-				if v.Transparency == 1 then
-					v.CanCollide = false
-				end
-			end
-		end
-	end)
-end
-coroutine.wrap(HECUUCM_fake_script)()
-local function JQRYBPD_fake_script() -- Killall.LocalScript 
+coroutine.wrap(OCXLK_fake_script)()
+local function TXVS_fake_script() -- Killall.LocalScript 
 	local script = Instance.new('LocalScript', Killall)
 
 	local roles
+	local no
 	function IsAlive(Player) 
 		for i, v in pairs(roles) do
 			if Player.Name == i then
@@ -1931,80 +1830,81 @@ local function JQRYBPD_fake_script() -- Killall.LocalScript
 	function kill()
 		for i,v in pairs(game.Players:GetPlayers()) do
 			roles = game.ReplicatedStorage:FindFirstChild("GetPlayerData", true):InvokeServer()
-			
-			if IsAlive(v) then
-			
-			local player = game.Players.LocalPlayer
-			local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
 	
-			if not player.Character:FindFirstChild("Knife") then
-				if humanoid then
-					local tool = game.Players.LocalPlayer.Backpack.Knife
-					if tool then
-						humanoid:EquipTool(tool)   
+			if IsAlive(v) then
+	
+				local player = game.Players.LocalPlayer
+				local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+	
+				if not player.Character:FindFirstChild("Knife") then
+					if humanoid then
+						local tool = game.Players.LocalPlayer.Backpack.Knife
+						if tool then
+							humanoid:EquipTool(tool)   
+						end
 					end
 				end
-			end
-			wait()
-			game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
-			local TweenService = game:GetService('TweenService')
-			local part = game.Players.LocalPlayer.Character.HumanoidRootPart 
+				wait()
 	
-			local info = TweenInfo.new(
-				.01,                      --How long the tween is played for (in seconds)
-				Enum.EasingStyle.Quad   ,   --The behavior of the tween
-				Enum.EasingDirection.Out,   --The direction of the style
-				0,                      --How many times the tween will be repeated
-				false,                  --Will the tween play in reverse as well?
-				0                   --Delay between each interpolation.
-			)
-	
-			local goal = {CFrame = v.Character.HumanoidRootPart.CFrame + Vector3.new(0,0,0)}
-	
-			local Tween = TweenService:Create(part,info,goal)
-			Tween:Play()
-	
-			game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
-	
-			local args = {
-				[1] = false
-			}
-			game:GetService("ReplicatedStorage").Remotes.Gameplay.FakeGun:FireServer(unpack(args))
-			local args = {
-				[1] = false
-			}
-			game:GetService("ReplicatedStorage").Remotes.Gameplay.Stealth:FireServer(unpack(args))
-			local args = {
-				[1] = "Down"
-			}
-			game:GetService("Players").LocalPlayer.Character.Knife.Stab:FireServer(unpack(args))
-				wait(.8)
+				local TweenService = game:GetService('TweenService')
+				local part = game.Players.LocalPlayer.Character.HumanoidRootPart 
+				local run
+				if script.Parent.Parent.Parent.Player.Noclip.CheckActive.Visible == true then
+					wait()
+					 no = true
+				else
+					script.Parent.Parent.Parent.Player.Noclip.CheckActive.Visible = true
+					no = false
+				end
+				for _,v in pairs(game.Players:GetPlayers()) do
+					if v ~= game.Players.LocalPlayer and IsAlive(v) then
+						v.Character.HumanoidRootPart.Size = Vector3.new(10000,10000,10000)
+					end
+				end
+				local args = {
+					[1] = false
+				}
+				game:GetService("ReplicatedStorage").Remotes.Gameplay.FakeGun:FireServer(unpack(args))
+				local args = {
+					[1] = false
+				}
+				game:GetService("ReplicatedStorage").Remotes.Gameplay.Stealth:FireServer(unpack(args))
+				local args = {
+					[1] = "Down"
+				}
+				game:GetService("Players").LocalPlayer.Character.Knife.Stab:FireServer(unpack(args))
 			end
 		end
+		wait(.5)
+		if not no then
+			script.Parent.Parent.Parent.Player.Noclip.CheckActive.Visible = false
+		end
 	end
+	
+	
 	script.Parent.MouseButton1Click:Connect(function()
 		kill()
 	end)
 end
-coroutine.wrap(JQRYBPD_fake_script)()
-local function RZDJA_fake_script() -- Show_8.LocalScript 
-	local script = Instance.new('LocalScript', Show_8)
+coroutine.wrap(TXVS_fake_script)()
+local function XQRJENC_fake_script() -- Show_7.LocalScript 
+	local script = Instance.new('LocalScript', Show_7)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(RZDJA_fake_script)()
-local function CEHABT_fake_script() -- OnOff_8.LocalScript 
-	local script = Instance.new('LocalScript', OnOff_8)
+coroutine.wrap(XQRJENC_fake_script)()
+local function IJUSXB_fake_script() -- OnOff_7.LocalScript 
+	local script = Instance.new('LocalScript', OnOff_7)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(CEHABT_fake_script)()
-local function JRGHA_fake_script() -- OnOff_8.LocalScript 
-	local script = Instance.new('LocalScript', OnOff_8)
+coroutine.wrap(IJUSXB_fake_script)()
+local function GNTKG_fake_script() -- OnOff_7.LocalScript 
+	local script = Instance.new('LocalScript', OnOff_7)
 
 	local tweenService = game:GetService("TweenService")
 	
@@ -2155,17 +2055,17 @@ local function JRGHA_fake_script() -- OnOff_8.LocalScript
 	
 	end)
 end
-coroutine.wrap(JRGHA_fake_script)()
-local function VQCC_fake_script() -- Show_9.LocalScript 
-	local script = Instance.new('LocalScript', Show_9)
+coroutine.wrap(GNTKG_fake_script)()
+local function SDYPHEV_fake_script() -- Show_8.LocalScript 
+	local script = Instance.new('LocalScript', Show_8)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(VQCC_fake_script)()
-local function SBOSMJ_fake_script() -- OnOff_9.LocalScript 
-	local script = Instance.new('LocalScript', OnOff_9)
+coroutine.wrap(SDYPHEV_fake_script)()
+local function XDJV_fake_script() -- OnOff_8.LocalScript 
+	local script = Instance.new('LocalScript', OnOff_8)
 
 	local tweenService = game:GetService("TweenService")
 	
@@ -2284,25 +2184,25 @@ local function SBOSMJ_fake_script() -- OnOff_9.LocalScript
 		end
 	end)
 end
-coroutine.wrap(SBOSMJ_fake_script)()
-local function HZOGZVD_fake_script() -- OnOff_9.LocalScript 
-	local script = Instance.new('LocalScript', OnOff_9)
+coroutine.wrap(XDJV_fake_script)()
+local function OQBM_fake_script() -- OnOff_8.LocalScript 
+	local script = Instance.new('LocalScript', OnOff_8)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(HZOGZVD_fake_script)()
-local function WLJP_fake_script() -- Show_10.LocalScript 
-	local script = Instance.new('LocalScript', Show_10)
+coroutine.wrap(OQBM_fake_script)()
+local function SGFWO_fake_script() -- Show_9.LocalScript 
+	local script = Instance.new('LocalScript', Show_9)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(WLJP_fake_script)()
-local function CHCRD_fake_script() -- OnOff_10.LocalScript 
-	local script = Instance.new('LocalScript', OnOff_10)
+coroutine.wrap(SGFWO_fake_script)()
+local function ZWJWNE_fake_script() -- OnOff_9.LocalScript 
+	local script = Instance.new('LocalScript', OnOff_9)
 
 	local tweenService = game:GetService("TweenService")
 	local see = Instance.new("BoxHandleAdornment", game.CoreGui)
@@ -2378,16 +2278,118 @@ local function CHCRD_fake_script() -- OnOff_10.LocalScript
 	end
 	
 end
-coroutine.wrap(CHCRD_fake_script)()
-local function LGSX_fake_script() -- OnOff_10.LocalScript 
+coroutine.wrap(ZWJWNE_fake_script)()
+local function QYDXL_fake_script() -- OnOff_9.LocalScript 
+	local script = Instance.new('LocalScript', OnOff_9)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.CheckActive.Visible
+	end)
+end
+coroutine.wrap(QYDXL_fake_script)()
+local function FTKSV_fake_script() -- Show_10.LocalScript 
+	local script = Instance.new('LocalScript', Show_10)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.Parent.CheckActive.Visible
+	end)
+end
+coroutine.wrap(FTKSV_fake_script)()
+local function GYMN_fake_script() -- OnOff_10.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_10)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(LGSX_fake_script)()
-local function DLOKI_fake_script() -- OpenClose.LocalScript 
+coroutine.wrap(GYMN_fake_script)()
+local function RANP_fake_script() -- OnOff_10.LocalScript 
+	local script = Instance.new('LocalScript', OnOff_10)
+
+	local tweenService = game:GetService("TweenService")
+	
+	local active = false
+	
+	local t=false
+	
+	local function scan(z,t)
+		for _,i in pairs(z:GetChildren()) do
+			if i:IsA("BasePart") and not i.Parent:FindFirstChild("Humanoid") and not i.Parent.Parent:FindFirstChild("Humanoid") then
+				i.LocalTransparencyModifier=t
+			end
+	
+			scan(i,t)
+		end
+	end
+	
+	function x(v)
+		if v then
+			scan(workspace,0.5)
+		else
+			scan(workspace,0)
+		end
+	end
+	
+	script.Parent.Parent.CheckActive:GetPropertyChangedSignal("Visible"):Connect(function()
+		wait()
+		if script.Parent.Parent.CheckActive.Visible == true then
+			
+			local info1 = TweenInfo.new(
+				.2, -- Time animating
+				Enum.EasingStyle.Linear, -- EasingStyle
+				Enum.EasingDirection.Out, -- EasingDirection
+				0, -- Repitions
+				false, -- Reverse post tween?
+				0 -- Delay time
+			)
+			local goal1 = {
+				Position = UDim2.new(0.55, 0,0, 0)
+			}
+			local tween2 = tweenService:Create(script.Parent.Show, info1, goal1)
+			tween2:Play()
+			
+			script.Parent.Show.BackgroundColor3 = Color3.fromRGB(16, 209, 6)
+			script.Parent.BackgroundColor3 = Color3.fromRGB(16, 209, 6)
+			active = true
+			
+			t = true
+			x(t)
+			
+			
+		elseif script.Parent.Parent.CheckActive.Visible == false then
+			
+			local info2 = TweenInfo.new(
+				.2, -- Time animating
+				Enum.EasingStyle.Linear, -- EasingStyle
+				Enum.EasingDirection.Out, -- EasingDirection
+				0, -- Repitions
+				false, -- Reverse post tween?
+				0 -- Delay time
+			)
+			local goal2 = {
+				Position = UDim2.new(0, 0,0, 0)
+			}
+			local tween2 = tweenService:Create(script.Parent.Show, info2, goal2)
+			
+			tween2:Play()
+			script.Parent.Show.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
+			script.Parent.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
+			active = false
+			
+			t = false
+			x(t)
+		end
+	end)
+	
+	
+	
+	
+				
+	
+	
+end
+coroutine.wrap(RANP_fake_script)()
+local function NNFW_fake_script() -- OpenClose.LocalScript 
 	local script = Instance.new('LocalScript', OpenClose)
 
 	local TweenService = game:GetService("TweenService")
@@ -2435,10 +2437,10 @@ local function DLOKI_fake_script() -- OpenClose.LocalScript
 		end
 	end)
 end
-coroutine.wrap(DLOKI_fake_script)()
-local function PHIGP_fake_script() -- TopBar.LocalScript 
+coroutine.wrap(NNFW_fake_script)()
+local function DOER_fake_script() -- TopBar.LocalScript 
 	local script = Instance.new('LocalScript', TopBar)
 
 	script.Parent.Draggable = true
 end
-coroutine.wrap(PHIGP_fake_script)()
+coroutine.wrap(DOER_fake_script)()
