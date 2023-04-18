@@ -57,53 +57,71 @@ local Show_5 = Instance.new("TextButton")
 local UICorner_19 = Instance.new("UICorner")
 local UICorner_20 = Instance.new("UICorner")
 local CheckActive_5 = Instance.new("ImageLabel")
-local GameMods_2 = Instance.new("ScrollingFrame")
-local TrapAll = Instance.new("TextButton")
+local Jump = Instance.new("TextButton")
 local OnOff_6 = Instance.new("TextButton")
 local UICorner_21 = Instance.new("UICorner")
 local Show_6 = Instance.new("TextButton")
 local UICorner_22 = Instance.new("UICorner")
 local UICorner_23 = Instance.new("UICorner")
 local CheckActive_6 = Instance.new("ImageLabel")
-local Godmode = Instance.new("TextButton")
+local Value_3 = Instance.new("TextBox")
 local UICorner_24 = Instance.new("UICorner")
-local Removebarriers = Instance.new("TextButton")
+local GameMods_2 = Instance.new("ScrollingFrame")
+local TrapAll = Instance.new("TextButton")
+local OnOff_7 = Instance.new("TextButton")
 local UICorner_25 = Instance.new("UICorner")
-local GetGun = Instance.new("TextButton")
+local Show_7 = Instance.new("TextButton")
 local UICorner_26 = Instance.new("UICorner")
+local UICorner_27 = Instance.new("UICorner")
+local CheckActive_7 = Instance.new("ImageLabel")
+local Godmode = Instance.new("TextButton")
+local UICorner_28 = Instance.new("UICorner")
+local Removebarriers = Instance.new("TextButton")
+local UICorner_29 = Instance.new("UICorner")
+local GetGun = Instance.new("TextButton")
+local UICorner_30 = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
+local Crash = Instance.new("TextButton")
+local UICorner_31 = Instance.new("UICorner")
+local Imrpovecrahsuc6 = Instance.new("TextButton")
+local OnOff_8 = Instance.new("TextButton")
+local UICorner_32 = Instance.new("UICorner")
+local Show_8 = Instance.new("TextButton")
+local UICorner_33 = Instance.new("UICorner")
+local UICorner_34 = Instance.new("UICorner")
+local CheckActive_8 = Instance.new("ImageLabel")
 local Combat_2 = Instance.new("ScrollingFrame")
 local Killall = Instance.new("TextButton")
-local UICorner_27 = Instance.new("UICorner")
+local UICorner_35 = Instance.new("UICorner")
 local Settings_2 = Instance.new("ScrollingFrame")
 local Chams = Instance.new("TextButton")
-local OnOff_7 = Instance.new("TextButton")
-local UICorner_28 = Instance.new("UICorner")
-local Show_7 = Instance.new("TextButton")
-local UICorner_29 = Instance.new("UICorner")
-local UICorner_30 = Instance.new("UICorner")
-local CheckActive_7 = Instance.new("ImageLabel")
-local ESP = Instance.new("TextButton")
-local OnOff_8 = Instance.new("TextButton")
-local UICorner_31 = Instance.new("UICorner")
-local Show_8 = Instance.new("TextButton")
-local UICorner_32 = Instance.new("UICorner")
-local UICorner_33 = Instance.new("UICorner")
-local CheckActive_8 = Instance.new("ImageLabel")
-local Gunesp = Instance.new("TextButton")
 local OnOff_9 = Instance.new("TextButton")
-local UICorner_34 = Instance.new("UICorner")
-local Show_9 = Instance.new("TextButton")
-local UICorner_35 = Instance.new("UICorner")
 local UICorner_36 = Instance.new("UICorner")
-local CheckActive_9 = Instance.new("ImageLabel")
-local Xray = Instance.new("TextButton")
-local OnOff_10 = Instance.new("TextButton")
+local Show_9 = Instance.new("TextButton")
 local UICorner_37 = Instance.new("UICorner")
-local Show_10 = Instance.new("TextButton")
 local UICorner_38 = Instance.new("UICorner")
+local CheckActive_9 = Instance.new("ImageLabel")
+local ESP = Instance.new("TextButton")
+local OnOff_10 = Instance.new("TextButton")
 local UICorner_39 = Instance.new("UICorner")
+local Show_10 = Instance.new("TextButton")
+local UICorner_40 = Instance.new("UICorner")
+local UICorner_41 = Instance.new("UICorner")
 local CheckActive_10 = Instance.new("ImageLabel")
+local Gunesp = Instance.new("TextButton")
+local OnOff_11 = Instance.new("TextButton")
+local UICorner_42 = Instance.new("UICorner")
+local Show_11 = Instance.new("TextButton")
+local UICorner_43 = Instance.new("UICorner")
+local UICorner_44 = Instance.new("UICorner")
+local CheckActive_11 = Instance.new("ImageLabel")
+local Xray = Instance.new("TextButton")
+local OnOff_12 = Instance.new("TextButton")
+local UICorner_45 = Instance.new("UICorner")
+local Show_12 = Instance.new("TextButton")
+local UICorner_46 = Instance.new("UICorner")
+local UICorner_47 = Instance.new("UICorner")
+local CheckActive_12 = Instance.new("ImageLabel")
 local Credits_2 = Instance.new("ScrollingFrame")
 local OpenClose = Instance.new("ImageButton")
 
@@ -121,7 +139,7 @@ TopBar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TopBar.Position = UDim2.new(0.5030303, 0, 0.475308657, 0)
 TopBar.Size = UDim2.new(0, 550, 0, 39)
 TopBar.Font = Enum.Font.FredokaOne
-TopBar.Text = "Xeroxus - V1.90"
+TopBar.Text = "Xeroxus - V1.91"
 TopBar.TextColor3 = Color3.fromRGB(19, 130, 199)
 TopBar.TextSize = 32.000
 TopBar.TextXAlignment = Enum.TextXAlignment.Left
@@ -228,6 +246,7 @@ Player_2.Active = true
 Player_2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
 Player_2.BorderSizePixel = 0
 Player_2.Size = UDim2.new(0, 409, 0, 276)
+Player_2.Visible = false
 
 Walkspeed.Name = "Walkspeed"
 Walkspeed.Parent = Player_2
@@ -282,7 +301,7 @@ Value.Position = UDim2.new(0.70599997, 0, 0.172000006, 0)
 Value.Size = UDim2.new(0, 45, 0, 18)
 Value.Font = Enum.Font.SourceSans
 Value.Text = "100"
-Value.TextColor3 = Color3.fromRGB(0, 0, 0)
+Value.TextColor3 = Color3.fromRGB(19, 130, 199)
 Value.TextSize = 14.000
 
 UICorner_7.Parent = Value
@@ -341,7 +360,7 @@ Value_2.Position = UDim2.new(0.70599997, 0, 0.172000006, 0)
 Value_2.Size = UDim2.new(0, 45, 0, 18)
 Value_2.Font = Enum.Font.SourceSans
 Value_2.Text = "100"
-Value_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Value_2.TextColor3 = Color3.fromRGB(19, 130, 199)
 Value_2.TextSize = 14.000
 
 UICorner_11.Parent = Value_2
@@ -349,7 +368,7 @@ UICorner_11.Parent = Value_2
 FlyX.Name = "FlyX"
 FlyX.Parent = Player_2
 FlyX.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-FlyX.Position = UDim2.new(0, 0, 0.186000004, 0)
+FlyX.Position = UDim2.new(0, 0, 0.247999996, 0)
 FlyX.Size = UDim2.new(0, 390, 0, 28)
 FlyX.Font = Enum.Font.FredokaOne
 FlyX.Text = "Teleport Fly (x)"
@@ -395,7 +414,7 @@ CheckActive_3.Visible = false
 Noclip.Name = "Noclip"
 Noclip.Parent = Player_2
 Noclip.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Noclip.Position = UDim2.new(0, 0, 0.247999996, 0)
+Noclip.Position = UDim2.new(0, 0, 0.312000006, 0)
 Noclip.Size = UDim2.new(0, 390, 0, 28)
 Noclip.Font = Enum.Font.FredokaOne
 Noclip.Text = "Noclip"
@@ -441,7 +460,7 @@ CheckActive_4.Visible = false
 RealFly.Name = "RealFly"
 RealFly.Parent = Player_2
 RealFly.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-RealFly.Position = UDim2.new(0, 0, 0.123999998, 0)
+RealFly.Position = UDim2.new(0, 0, 0.186000004, 0)
 RealFly.Size = UDim2.new(0, 390, 0, 28)
 RealFly.Font = Enum.Font.FredokaOne
 RealFly.Text = "Fly"
@@ -484,28 +503,20 @@ CheckActive_5.BackgroundTransparency = 1.000
 CheckActive_5.Size = UDim2.new(0, 100, 0, 100)
 CheckActive_5.Visible = false
 
-GameMods_2.Name = "GameMods"
-GameMods_2.Parent = GameScrollingFrames
-GameMods_2.Active = true
-GameMods_2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
-GameMods_2.BorderSizePixel = 0
-GameMods_2.Size = UDim2.new(0, 409, 0, 276)
-GameMods_2.Visible = false
-
-TrapAll.Name = "TrapAll"
-TrapAll.Parent = GameMods_2
-TrapAll.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TrapAll.Position = UDim2.new(0, 0, 0.123000003, 0)
-TrapAll.Size = UDim2.new(0, 390, 0, 28)
-TrapAll.ZIndex = 2
-TrapAll.Font = Enum.Font.FredokaOne
-TrapAll.Text = "Trap All"
-TrapAll.TextColor3 = Color3.fromRGB(19, 130, 199)
-TrapAll.TextSize = 32.000
-TrapAll.TextXAlignment = Enum.TextXAlignment.Left
+Jump.Name = "Jump"
+Jump.Parent = Player_2
+Jump.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Jump.Position = UDim2.new(0, 0, 0.123999998, 0)
+Jump.Size = UDim2.new(0, 390, 0, 28)
+Jump.ZIndex = 2
+Jump.Font = Enum.Font.FredokaOne
+Jump.Text = "Jumppower"
+Jump.TextColor3 = Color3.fromRGB(19, 130, 199)
+Jump.TextSize = 32.000
+Jump.TextXAlignment = Enum.TextXAlignment.Left
 
 OnOff_6.Name = "OnOff"
-OnOff_6.Parent = TrapAll
+OnOff_6.Parent = Jump
 OnOff_6.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
 OnOff_6.BackgroundTransparency = 0.700
 OnOff_6.Position = UDim2.new(0.853999972, 0, 0.172000006, 0)
@@ -530,14 +541,80 @@ Show_6.TextSize = 14.000
 UICorner_22.CornerRadius = UDim.new(3, 5)
 UICorner_22.Parent = Show_6
 
-UICorner_23.Parent = TrapAll
+UICorner_23.Parent = Jump
 
 CheckActive_6.Name = "CheckActive"
-CheckActive_6.Parent = TrapAll
+CheckActive_6.Parent = Jump
 CheckActive_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 CheckActive_6.BackgroundTransparency = 1.000
 CheckActive_6.Size = UDim2.new(0, 100, 0, 100)
 CheckActive_6.Visible = false
+
+Value_3.Name = "Value"
+Value_3.Parent = Jump
+Value_3.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Value_3.Position = UDim2.new(0.70599997, 0, 0.172000006, 0)
+Value_3.Size = UDim2.new(0, 45, 0, 18)
+Value_3.Font = Enum.Font.SourceSans
+Value_3.Text = "100"
+Value_3.TextColor3 = Color3.fromRGB(19, 130, 199)
+Value_3.TextSize = 14.000
+
+UICorner_24.Parent = Value_3
+
+GameMods_2.Name = "GameMods"
+GameMods_2.Parent = GameScrollingFrames
+GameMods_2.Active = true
+GameMods_2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+GameMods_2.BorderSizePixel = 0
+GameMods_2.Size = UDim2.new(0, 409, 0, 276)
+
+TrapAll.Name = "TrapAll"
+TrapAll.Parent = GameMods_2
+TrapAll.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TrapAll.Position = UDim2.new(0, 0, 0.123999998, 0)
+TrapAll.Size = UDim2.new(0, 390, 0, 28)
+TrapAll.ZIndex = 2
+TrapAll.Font = Enum.Font.FredokaOne
+TrapAll.Text = "Trap All"
+TrapAll.TextColor3 = Color3.fromRGB(19, 130, 199)
+TrapAll.TextSize = 32.000
+TrapAll.TextXAlignment = Enum.TextXAlignment.Left
+
+OnOff_7.Name = "OnOff"
+OnOff_7.Parent = TrapAll
+OnOff_7.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
+OnOff_7.BackgroundTransparency = 0.700
+OnOff_7.Position = UDim2.new(0.853999972, 0, 0.172000006, 0)
+OnOff_7.Size = UDim2.new(0, 40, 0, 18)
+OnOff_7.Font = Enum.Font.SourceSans
+OnOff_7.Text = ""
+OnOff_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+OnOff_7.TextSize = 14.000
+
+UICorner_25.CornerRadius = UDim.new(3, 5)
+UICorner_25.Parent = OnOff_7
+
+Show_7.Name = "Show"
+Show_7.Parent = OnOff_7
+Show_7.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
+Show_7.Size = UDim2.new(0, 18, 0, 18)
+Show_7.Font = Enum.Font.SourceSans
+Show_7.Text = ""
+Show_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+Show_7.TextSize = 14.000
+
+UICorner_26.CornerRadius = UDim.new(3, 5)
+UICorner_26.Parent = Show_7
+
+UICorner_27.Parent = TrapAll
+
+CheckActive_7.Name = "CheckActive"
+CheckActive_7.Parent = TrapAll
+CheckActive_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CheckActive_7.BackgroundTransparency = 1.000
+CheckActive_7.Size = UDim2.new(0, 100, 0, 100)
+CheckActive_7.Visible = false
 
 Godmode.Name = "Godmode"
 Godmode.Parent = GameMods_2
@@ -551,7 +628,7 @@ Godmode.TextColor3 = Color3.fromRGB(19, 130, 199)
 Godmode.TextSize = 32.000
 Godmode.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_24.Parent = Godmode
+UICorner_28.Parent = Godmode
 
 Removebarriers.Name = "Removebarriers"
 Removebarriers.Parent = GameMods_2
@@ -565,7 +642,7 @@ Removebarriers.TextColor3 = Color3.fromRGB(19, 130, 199)
 Removebarriers.TextSize = 32.000
 Removebarriers.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_25.Parent = Removebarriers
+UICorner_29.Parent = Removebarriers
 
 GetGun.Name = "GetGun"
 GetGun.Parent = GameMods_2
@@ -579,7 +656,7 @@ GetGun.TextColor3 = Color3.fromRGB(19, 130, 199)
 GetGun.TextSize = 32.000
 GetGun.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_26.Parent = GetGun
+UICorner_30.Parent = GetGun
 
 TextLabel.Parent = GetGun
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -590,6 +667,66 @@ TextLabel.Font = Enum.Font.SourceSans
 TextLabel.Text = "Gun dropped = false"
 TextLabel.TextColor3 = Color3.fromRGB(193, 0, 0)
 TextLabel.TextSize = 14.000
+
+Crash.Name = "Crash"
+Crash.Parent = GameMods_2
+Crash.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Crash.Size = UDim2.new(0, 390, 0, 28)
+Crash.ZIndex = 2
+Crash.Font = Enum.Font.FredokaOne
+Crash.Text = "Kill / void murderer"
+Crash.TextColor3 = Color3.fromRGB(19, 130, 199)
+Crash.TextSize = 32.000
+Crash.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_31.Parent = Crash
+
+Imrpovecrahsuc6.Name = "Imrpovecrahsuc6"
+Imrpovecrahsuc6.Parent = GameMods_2
+Imrpovecrahsuc6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Imrpovecrahsuc6.Position = UDim2.new(0, 0, 0.061999999, 0)
+Imrpovecrahsuc6.Size = UDim2.new(0, 390, 0, 28)
+Imrpovecrahsuc6.ZIndex = 2
+Imrpovecrahsuc6.Font = Enum.Font.FredokaOne
+Imrpovecrahsuc6.Text = "Increase void chance"
+Imrpovecrahsuc6.TextColor3 = Color3.fromRGB(19, 130, 199)
+Imrpovecrahsuc6.TextSize = 32.000
+Imrpovecrahsuc6.TextXAlignment = Enum.TextXAlignment.Left
+
+OnOff_8.Name = "OnOff"
+OnOff_8.Parent = Imrpovecrahsuc6
+OnOff_8.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
+OnOff_8.BackgroundTransparency = 0.700
+OnOff_8.Position = UDim2.new(0.853999972, 0, 0.172000006, 0)
+OnOff_8.Size = UDim2.new(0, 40, 0, 18)
+OnOff_8.Font = Enum.Font.SourceSans
+OnOff_8.Text = ""
+OnOff_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+OnOff_8.TextSize = 14.000
+
+UICorner_32.CornerRadius = UDim.new(3, 5)
+UICorner_32.Parent = OnOff_8
+
+Show_8.Name = "Show"
+Show_8.Parent = OnOff_8
+Show_8.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
+Show_8.Size = UDim2.new(0, 18, 0, 18)
+Show_8.Font = Enum.Font.SourceSans
+Show_8.Text = ""
+Show_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+Show_8.TextSize = 14.000
+
+UICorner_33.CornerRadius = UDim.new(3, 5)
+UICorner_33.Parent = Show_8
+
+UICorner_34.Parent = Imrpovecrahsuc6
+
+CheckActive_8.Name = "CheckActive"
+CheckActive_8.Parent = Imrpovecrahsuc6
+CheckActive_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CheckActive_8.BackgroundTransparency = 1.000
+CheckActive_8.Size = UDim2.new(0, 100, 0, 100)
+CheckActive_8.Visible = false
 
 Combat_2.Name = "Combat"
 Combat_2.Parent = GameScrollingFrames
@@ -610,7 +747,7 @@ Killall.TextColor3 = Color3.fromRGB(19, 130, 199)
 Killall.TextSize = 32.000
 Killall.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_27.Parent = Killall
+UICorner_35.Parent = Killall
 
 Settings_2.Name = "Settings"
 Settings_2.Parent = GameScrollingFrames
@@ -632,40 +769,40 @@ Chams.TextColor3 = Color3.fromRGB(19, 130, 199)
 Chams.TextSize = 32.000
 Chams.TextXAlignment = Enum.TextXAlignment.Left
 
-OnOff_7.Name = "OnOff"
-OnOff_7.Parent = Chams
-OnOff_7.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
-OnOff_7.BackgroundTransparency = 0.700
-OnOff_7.Position = UDim2.new(0.853999972, 0, 0.172000006, 0)
-OnOff_7.Size = UDim2.new(0, 40, 0, 18)
-OnOff_7.Font = Enum.Font.SourceSans
-OnOff_7.Text = ""
-OnOff_7.TextColor3 = Color3.fromRGB(0, 0, 0)
-OnOff_7.TextSize = 14.000
+OnOff_9.Name = "OnOff"
+OnOff_9.Parent = Chams
+OnOff_9.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
+OnOff_9.BackgroundTransparency = 0.700
+OnOff_9.Position = UDim2.new(0.853999972, 0, 0.172000006, 0)
+OnOff_9.Size = UDim2.new(0, 40, 0, 18)
+OnOff_9.Font = Enum.Font.SourceSans
+OnOff_9.Text = ""
+OnOff_9.TextColor3 = Color3.fromRGB(0, 0, 0)
+OnOff_9.TextSize = 14.000
 
-UICorner_28.CornerRadius = UDim.new(3, 5)
-UICorner_28.Parent = OnOff_7
+UICorner_36.CornerRadius = UDim.new(3, 5)
+UICorner_36.Parent = OnOff_9
 
-Show_7.Name = "Show"
-Show_7.Parent = OnOff_7
-Show_7.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
-Show_7.Size = UDim2.new(0, 18, 0, 18)
-Show_7.Font = Enum.Font.SourceSans
-Show_7.Text = ""
-Show_7.TextColor3 = Color3.fromRGB(0, 0, 0)
-Show_7.TextSize = 14.000
+Show_9.Name = "Show"
+Show_9.Parent = OnOff_9
+Show_9.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
+Show_9.Size = UDim2.new(0, 18, 0, 18)
+Show_9.Font = Enum.Font.SourceSans
+Show_9.Text = ""
+Show_9.TextColor3 = Color3.fromRGB(0, 0, 0)
+Show_9.TextSize = 14.000
 
-UICorner_29.CornerRadius = UDim.new(3, 5)
-UICorner_29.Parent = Show_7
+UICorner_37.CornerRadius = UDim.new(3, 5)
+UICorner_37.Parent = Show_9
 
-UICorner_30.Parent = Chams
+UICorner_38.Parent = Chams
 
-CheckActive_7.Name = "CheckActive"
-CheckActive_7.Parent = Chams
-CheckActive_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CheckActive_7.BackgroundTransparency = 1.000
-CheckActive_7.Size = UDim2.new(0, 100, 0, 100)
-CheckActive_7.Visible = false
+CheckActive_9.Name = "CheckActive"
+CheckActive_9.Parent = Chams
+CheckActive_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CheckActive_9.BackgroundTransparency = 1.000
+CheckActive_9.Size = UDim2.new(0, 100, 0, 100)
+CheckActive_9.Visible = false
 
 ESP.Name = "ESP"
 ESP.Parent = Settings_2
@@ -678,40 +815,40 @@ ESP.TextColor3 = Color3.fromRGB(19, 130, 199)
 ESP.TextSize = 32.000
 ESP.TextXAlignment = Enum.TextXAlignment.Left
 
-OnOff_8.Name = "OnOff"
-OnOff_8.Parent = ESP
-OnOff_8.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
-OnOff_8.BackgroundTransparency = 0.700
-OnOff_8.Position = UDim2.new(0.853999972, 0, 0.172000006, 0)
-OnOff_8.Size = UDim2.new(0, 40, 0, 18)
-OnOff_8.Font = Enum.Font.SourceSans
-OnOff_8.Text = ""
-OnOff_8.TextColor3 = Color3.fromRGB(0, 0, 0)
-OnOff_8.TextSize = 14.000
+OnOff_10.Name = "OnOff"
+OnOff_10.Parent = ESP
+OnOff_10.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
+OnOff_10.BackgroundTransparency = 0.700
+OnOff_10.Position = UDim2.new(0.853999972, 0, 0.172000006, 0)
+OnOff_10.Size = UDim2.new(0, 40, 0, 18)
+OnOff_10.Font = Enum.Font.SourceSans
+OnOff_10.Text = ""
+OnOff_10.TextColor3 = Color3.fromRGB(0, 0, 0)
+OnOff_10.TextSize = 14.000
 
-UICorner_31.CornerRadius = UDim.new(3, 5)
-UICorner_31.Parent = OnOff_8
+UICorner_39.CornerRadius = UDim.new(3, 5)
+UICorner_39.Parent = OnOff_10
 
-Show_8.Name = "Show"
-Show_8.Parent = OnOff_8
-Show_8.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
-Show_8.Size = UDim2.new(0, 18, 0, 18)
-Show_8.Font = Enum.Font.SourceSans
-Show_8.Text = ""
-Show_8.TextColor3 = Color3.fromRGB(0, 0, 0)
-Show_8.TextSize = 14.000
+Show_10.Name = "Show"
+Show_10.Parent = OnOff_10
+Show_10.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
+Show_10.Size = UDim2.new(0, 18, 0, 18)
+Show_10.Font = Enum.Font.SourceSans
+Show_10.Text = ""
+Show_10.TextColor3 = Color3.fromRGB(0, 0, 0)
+Show_10.TextSize = 14.000
 
-UICorner_32.CornerRadius = UDim.new(3, 5)
-UICorner_32.Parent = Show_8
+UICorner_40.CornerRadius = UDim.new(3, 5)
+UICorner_40.Parent = Show_10
 
-UICorner_33.Parent = ESP
+UICorner_41.Parent = ESP
 
-CheckActive_8.Name = "CheckActive"
-CheckActive_8.Parent = ESP
-CheckActive_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CheckActive_8.BackgroundTransparency = 1.000
-CheckActive_8.Size = UDim2.new(0, 100, 0, 100)
-CheckActive_8.Visible = false
+CheckActive_10.Name = "CheckActive"
+CheckActive_10.Parent = ESP
+CheckActive_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CheckActive_10.BackgroundTransparency = 1.000
+CheckActive_10.Size = UDim2.new(0, 100, 0, 100)
+CheckActive_10.Visible = false
 
 Gunesp.Name = "Gunesp"
 Gunesp.Parent = Settings_2
@@ -725,40 +862,40 @@ Gunesp.TextColor3 = Color3.fromRGB(19, 130, 199)
 Gunesp.TextSize = 32.000
 Gunesp.TextXAlignment = Enum.TextXAlignment.Left
 
-OnOff_9.Name = "OnOff"
-OnOff_9.Parent = Gunesp
-OnOff_9.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
-OnOff_9.BackgroundTransparency = 0.700
-OnOff_9.Position = UDim2.new(0.853999972, 0, 0.172000006, 0)
-OnOff_9.Size = UDim2.new(0, 40, 0, 18)
-OnOff_9.Font = Enum.Font.SourceSans
-OnOff_9.Text = ""
-OnOff_9.TextColor3 = Color3.fromRGB(0, 0, 0)
-OnOff_9.TextSize = 14.000
+OnOff_11.Name = "OnOff"
+OnOff_11.Parent = Gunesp
+OnOff_11.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
+OnOff_11.BackgroundTransparency = 0.700
+OnOff_11.Position = UDim2.new(0.853999972, 0, 0.172000006, 0)
+OnOff_11.Size = UDim2.new(0, 40, 0, 18)
+OnOff_11.Font = Enum.Font.SourceSans
+OnOff_11.Text = ""
+OnOff_11.TextColor3 = Color3.fromRGB(0, 0, 0)
+OnOff_11.TextSize = 14.000
 
-UICorner_34.CornerRadius = UDim.new(3, 5)
-UICorner_34.Parent = OnOff_9
+UICorner_42.CornerRadius = UDim.new(3, 5)
+UICorner_42.Parent = OnOff_11
 
-Show_9.Name = "Show"
-Show_9.Parent = OnOff_9
-Show_9.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
-Show_9.Size = UDim2.new(0, 18, 0, 18)
-Show_9.Font = Enum.Font.SourceSans
-Show_9.Text = ""
-Show_9.TextColor3 = Color3.fromRGB(0, 0, 0)
-Show_9.TextSize = 14.000
+Show_11.Name = "Show"
+Show_11.Parent = OnOff_11
+Show_11.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
+Show_11.Size = UDim2.new(0, 18, 0, 18)
+Show_11.Font = Enum.Font.SourceSans
+Show_11.Text = ""
+Show_11.TextColor3 = Color3.fromRGB(0, 0, 0)
+Show_11.TextSize = 14.000
 
-UICorner_35.CornerRadius = UDim.new(3, 5)
-UICorner_35.Parent = Show_9
+UICorner_43.CornerRadius = UDim.new(3, 5)
+UICorner_43.Parent = Show_11
 
-UICorner_36.Parent = Gunesp
+UICorner_44.Parent = Gunesp
 
-CheckActive_9.Name = "CheckActive"
-CheckActive_9.Parent = Gunesp
-CheckActive_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CheckActive_9.BackgroundTransparency = 1.000
-CheckActive_9.Size = UDim2.new(0, 100, 0, 100)
-CheckActive_9.Visible = false
+CheckActive_11.Name = "CheckActive"
+CheckActive_11.Parent = Gunesp
+CheckActive_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CheckActive_11.BackgroundTransparency = 1.000
+CheckActive_11.Size = UDim2.new(0, 100, 0, 100)
+CheckActive_11.Visible = false
 
 Xray.Name = "Xray"
 Xray.Parent = Settings_2
@@ -772,40 +909,40 @@ Xray.TextColor3 = Color3.fromRGB(19, 130, 199)
 Xray.TextSize = 32.000
 Xray.TextXAlignment = Enum.TextXAlignment.Left
 
-OnOff_10.Name = "OnOff"
-OnOff_10.Parent = Xray
-OnOff_10.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
-OnOff_10.BackgroundTransparency = 0.700
-OnOff_10.Position = UDim2.new(0.853999972, 0, 0.172000006, 0)
-OnOff_10.Size = UDim2.new(0, 40, 0, 18)
-OnOff_10.Font = Enum.Font.SourceSans
-OnOff_10.Text = ""
-OnOff_10.TextColor3 = Color3.fromRGB(0, 0, 0)
-OnOff_10.TextSize = 14.000
+OnOff_12.Name = "OnOff"
+OnOff_12.Parent = Xray
+OnOff_12.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
+OnOff_12.BackgroundTransparency = 0.700
+OnOff_12.Position = UDim2.new(0.853999972, 0, 0.172000006, 0)
+OnOff_12.Size = UDim2.new(0, 40, 0, 18)
+OnOff_12.Font = Enum.Font.SourceSans
+OnOff_12.Text = ""
+OnOff_12.TextColor3 = Color3.fromRGB(0, 0, 0)
+OnOff_12.TextSize = 14.000
 
-UICorner_37.CornerRadius = UDim.new(3, 5)
-UICorner_37.Parent = OnOff_10
+UICorner_45.CornerRadius = UDim.new(3, 5)
+UICorner_45.Parent = OnOff_12
 
-Show_10.Name = "Show"
-Show_10.Parent = OnOff_10
-Show_10.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
-Show_10.Size = UDim2.new(0, 18, 0, 18)
-Show_10.Font = Enum.Font.SourceSans
-Show_10.Text = ""
-Show_10.TextColor3 = Color3.fromRGB(0, 0, 0)
-Show_10.TextSize = 14.000
+Show_12.Name = "Show"
+Show_12.Parent = OnOff_12
+Show_12.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
+Show_12.Size = UDim2.new(0, 18, 0, 18)
+Show_12.Font = Enum.Font.SourceSans
+Show_12.Text = ""
+Show_12.TextColor3 = Color3.fromRGB(0, 0, 0)
+Show_12.TextSize = 14.000
 
-UICorner_38.CornerRadius = UDim.new(3, 5)
-UICorner_38.Parent = Show_10
+UICorner_46.CornerRadius = UDim.new(3, 5)
+UICorner_46.Parent = Show_12
 
-UICorner_39.Parent = Xray
+UICorner_47.Parent = Xray
 
-CheckActive_10.Name = "CheckActive"
-CheckActive_10.Parent = Xray
-CheckActive_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CheckActive_10.BackgroundTransparency = 1.000
-CheckActive_10.Size = UDim2.new(0, 100, 0, 100)
-CheckActive_10.Visible = false
+CheckActive_12.Name = "CheckActive"
+CheckActive_12.Parent = Xray
+CheckActive_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CheckActive_12.BackgroundTransparency = 1.000
+CheckActive_12.Size = UDim2.new(0, 100, 0, 100)
+CheckActive_12.Visible = false
 
 Credits_2.Name = "Credits"
 Credits_2.Parent = GameScrollingFrames
@@ -826,7 +963,7 @@ OpenClose.ImageColor3 = Color3.fromRGB(19, 130, 199)
 
 -- Scripts:
 
-local function ZPBKKSN_fake_script() -- SuperScreen.LocalScript 
+local function KTTBBK_fake_script() -- SuperScreen.LocalScript 
 	local script = Instance.new('LocalScript', SuperScreen)
 
 	while wait(3.14) do
@@ -844,8 +981,8 @@ local function ZPBKKSN_fake_script() -- SuperScreen.LocalScript
 		end
 	end
 end
-coroutine.wrap(ZPBKKSN_fake_script)()
-local function MNVIVNN_fake_script() -- Player.LocalScript 
+coroutine.wrap(KTTBBK_fake_script)()
+local function TOMTA_fake_script() -- Player.LocalScript 
 	local script = Instance.new('LocalScript', Player)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -867,8 +1004,8 @@ local function MNVIVNN_fake_script() -- Player.LocalScript
 		script.Parent.TextTransparency = 0
 	end)
 end
-coroutine.wrap(MNVIVNN_fake_script)()
-local function SEAEAJR_fake_script() -- Credits.LocalScript 
+coroutine.wrap(TOMTA_fake_script)()
+local function SXDDZVM_fake_script() -- Credits.LocalScript 
 	local script = Instance.new('LocalScript', Credits)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -890,8 +1027,8 @@ local function SEAEAJR_fake_script() -- Credits.LocalScript
 		script.Parent.TextTransparency = 0
 	end)
 end
-coroutine.wrap(SEAEAJR_fake_script)()
-local function PNCQJY_fake_script() -- Settings.LocalScript 
+coroutine.wrap(SXDDZVM_fake_script)()
+local function SHQEA_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -913,8 +1050,8 @@ local function PNCQJY_fake_script() -- Settings.LocalScript
 		script.Parent.TextTransparency = 0
 	end)
 end
-coroutine.wrap(PNCQJY_fake_script)()
-local function LAZUFD_fake_script() -- Combat.LocalScript 
+coroutine.wrap(SHQEA_fake_script)()
+local function XYKZUSH_fake_script() -- Combat.LocalScript 
 	local script = Instance.new('LocalScript', Combat)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -936,8 +1073,8 @@ local function LAZUFD_fake_script() -- Combat.LocalScript
 		script.Parent.TextTransparency = 0
 	end)
 end
-coroutine.wrap(LAZUFD_fake_script)()
-local function QPLWGRD_fake_script() -- GameMods.LocalScript 
+coroutine.wrap(XYKZUSH_fake_script)()
+local function ESUCQRV_fake_script() -- GameMods.LocalScript 
 	local script = Instance.new('LocalScript', GameMods)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -959,24 +1096,24 @@ local function QPLWGRD_fake_script() -- GameMods.LocalScript
 		script.Parent.TextTransparency = 0
 	end)
 end
-coroutine.wrap(QPLWGRD_fake_script)()
-local function JYIL_fake_script() -- Show.LocalScript 
+coroutine.wrap(ESUCQRV_fake_script)()
+local function KCJLW_fake_script() -- Show.LocalScript 
 	local script = Instance.new('LocalScript', Show)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(JYIL_fake_script)()
-local function NDKQM_fake_script() -- OnOff.LocalScript 
+coroutine.wrap(KCJLW_fake_script)()
+local function CRINMN_fake_script() -- OnOff.LocalScript 
 	local script = Instance.new('LocalScript', OnOff)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(NDKQM_fake_script)()
-local function RXHQQ_fake_script() -- OnOff.LocalScript 
+coroutine.wrap(CRINMN_fake_script)()
+local function JCVWWSU_fake_script() -- OnOff.LocalScript 
 	local script = Instance.new('LocalScript', OnOff)
 
 	local tweenService = game:GetService("TweenService")
@@ -1029,6 +1166,15 @@ local function RXHQQ_fake_script() -- OnOff.LocalScript
 		end
 	end)
 	
+	script.Parent.Parent.Value:GetPropertyChangedSignal("Text"):Connect(function()
+		if script.Parent.Parent.CheckActive.Visible == true then
+			local speed = script.Parent.Parent.Value.Text
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = speed
+		else
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+		end
+	end)
+	
 	game.Players.LocalPlayer.CharacterAdded:Connect(function()
 		wait(2)
 		if script.Parent.Parent.CheckActive.Visible == true then
@@ -1046,24 +1192,24 @@ local function RXHQQ_fake_script() -- OnOff.LocalScript
 		end
 	end)
 end
-coroutine.wrap(RXHQQ_fake_script)()
-local function POODDTO_fake_script() -- Show_2.LocalScript 
+coroutine.wrap(JCVWWSU_fake_script)()
+local function LYDI_fake_script() -- Show_2.LocalScript 
 	local script = Instance.new('LocalScript', Show_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(POODDTO_fake_script)()
-local function JDYYW_fake_script() -- OnOff_2.LocalScript 
+coroutine.wrap(LYDI_fake_script)()
+local function JVGA_fake_script() -- OnOff_2.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(JDYYW_fake_script)()
-local function BLFME_fake_script() -- OnOff_2.LocalScript 
+coroutine.wrap(JVGA_fake_script)()
+local function PCJXKL_fake_script() -- OnOff_2.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_2)
 
 	local speed
@@ -1191,24 +1337,24 @@ local function BLFME_fake_script() -- OnOff_2.LocalScript
 	end)
 	walky()
 end
-coroutine.wrap(BLFME_fake_script)()
-local function RJVQQ_fake_script() -- Show_3.LocalScript 
+coroutine.wrap(PCJXKL_fake_script)()
+local function KDMZ_fake_script() -- Show_3.LocalScript 
 	local script = Instance.new('LocalScript', Show_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(RJVQQ_fake_script)()
-local function BYGNAX_fake_script() -- OnOff_3.LocalScript 
+coroutine.wrap(KDMZ_fake_script)()
+local function RXZZ_fake_script() -- OnOff_3.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(BYGNAX_fake_script)()
-local function DOPOVXV_fake_script() -- OnOff_3.LocalScript 
+coroutine.wrap(RXZZ_fake_script)()
+local function XSYT_fake_script() -- OnOff_3.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_3)
 
 	local tweenService = game:GetService("TweenService")
@@ -1351,24 +1497,24 @@ local function DOPOVXV_fake_script() -- OnOff_3.LocalScript
 	
 	flyX()
 end
-coroutine.wrap(DOPOVXV_fake_script)()
-local function HSXOW_fake_script() -- Show_4.LocalScript 
+coroutine.wrap(XSYT_fake_script)()
+local function UDYQOLB_fake_script() -- Show_4.LocalScript 
 	local script = Instance.new('LocalScript', Show_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(HSXOW_fake_script)()
-local function ZXQTS_fake_script() -- OnOff_4.LocalScript 
+coroutine.wrap(UDYQOLB_fake_script)()
+local function ZLIA_fake_script() -- OnOff_4.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(ZXQTS_fake_script)()
-local function DBAY_fake_script() -- OnOff_4.LocalScript 
+coroutine.wrap(ZLIA_fake_script)()
+local function CHHMOJ_fake_script() -- OnOff_4.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_4)
 
 	local tweenService = game:GetService("TweenService")
@@ -1447,24 +1593,24 @@ local function DBAY_fake_script() -- OnOff_4.LocalScript
 		end)
 	end
 end
-coroutine.wrap(DBAY_fake_script)()
-local function PFPSQL_fake_script() -- Show_5.LocalScript 
+coroutine.wrap(CHHMOJ_fake_script)()
+local function VANOEA_fake_script() -- Show_5.LocalScript 
 	local script = Instance.new('LocalScript', Show_5)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(PFPSQL_fake_script)()
-local function OOONZPK_fake_script() -- OnOff_5.LocalScript 
+coroutine.wrap(VANOEA_fake_script)()
+local function RVMV_fake_script() -- OnOff_5.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_5)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(OOONZPK_fake_script)()
-local function AGUS_fake_script() -- OnOff_5.LocalScript 
+coroutine.wrap(RVMV_fake_script)()
+local function IYETMN_fake_script() -- OnOff_5.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_5)
 
 	local tweenService = game:GetService("TweenService")
@@ -1615,25 +1761,121 @@ local function AGUS_fake_script() -- OnOff_5.LocalScript
 	
 	
 end
-coroutine.wrap(AGUS_fake_script)()
-local function XAFGLT_fake_script() -- Show_6.LocalScript 
+coroutine.wrap(IYETMN_fake_script)()
+local function LFTSHJG_fake_script() -- Show_6.LocalScript 
 	local script = Instance.new('LocalScript', Show_6)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(XAFGLT_fake_script)()
-local function KZSNOMC_fake_script() -- OnOff_6.LocalScript 
+coroutine.wrap(LFTSHJG_fake_script)()
+local function ZLACKEX_fake_script() -- OnOff_6.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_6)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(KZSNOMC_fake_script)()
-local function COJEYO_fake_script() -- OnOff_6.LocalScript 
+coroutine.wrap(ZLACKEX_fake_script)()
+local function CEKO_fake_script() -- OnOff_6.LocalScript 
 	local script = Instance.new('LocalScript', OnOff_6)
+
+	local tweenService = game:GetService("TweenService")
+	
+	local active = false
+	
+	script.Parent.Parent.CheckActive:GetPropertyChangedSignal("Visible"):Connect(function()
+		wait()
+		if script.Parent.Parent.CheckActive.Visible == true then
+			
+			local info1 = TweenInfo.new(
+				.2, -- Time animating
+				Enum.EasingStyle.Linear, -- EasingStyle
+				Enum.EasingDirection.Out, -- EasingDirection
+				0, -- Repitions
+				false, -- Reverse post tween?
+				0 -- Delay time
+			)
+			local goal1 = {
+				Position = UDim2.new(0.55, 0,0, 0)
+			}
+			local tween2 = tweenService:Create(script.Parent.Show, info1, goal1)
+			tween2:Play()
+			
+			script.Parent.Show.BackgroundColor3 = Color3.fromRGB(16, 209, 6)
+			script.Parent.BackgroundColor3 = Color3.fromRGB(16, 209, 6)
+			active = true
+			
+			
+		elseif script.Parent.Parent.CheckActive.Visible == false then
+			
+			local info2 = TweenInfo.new(
+				.2, -- Time animating
+				Enum.EasingStyle.Linear, -- EasingStyle
+				Enum.EasingDirection.Out, -- EasingDirection
+				0, -- Repitions
+				false, -- Reverse post tween?
+				0 -- Delay time
+			)
+			local goal2 = {
+				Position = UDim2.new(0, 0,0, 0)
+			}
+			local tween2 = tweenService:Create(script.Parent.Show, info2, goal2)
+			
+			tween2:Play()
+			script.Parent.Show.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
+			script.Parent.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
+			active = false
+			
+		end
+	end)
+	
+	game.Players.LocalPlayer.CharacterAdded:Connect(function()
+		wait(2)
+		if script.Parent.Parent.CheckActive.Visible == true then
+			script.Parent.Parent.CheckActive.Visible = false
+			wait()
+			script.Parent.Parent.CheckActive.Visible = true
+		end
+	end)
+	
+	script.Parent.Parent.Value:GetPropertyChangedSignal("Text"):Connect(function()
+		if script.Parent.Parent.CheckActive.Visible == true then
+			local speed = script.Parent.Parent.Value.Text
+			game.Players.LocalPlayer.Character.Humanoid.JumpPower = speed
+		else
+			game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+		end
+	end)
+	script.Parent.Parent.CheckActive:GetPropertyChangedSignal("Visible"):Connect(function()
+		if script.Parent.Parent.CheckActive.Visible == true then
+			local speed = script.Parent.Parent.Value.Text
+			game.Players.LocalPlayer.Character.Humanoid.JumpPower = speed
+		else
+			game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+		end
+	end)
+end
+coroutine.wrap(CEKO_fake_script)()
+local function GWIUN_fake_script() -- Show_7.LocalScript 
+	local script = Instance.new('LocalScript', Show_7)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.Parent.CheckActive.Visible
+	end)
+end
+coroutine.wrap(GWIUN_fake_script)()
+local function MJDGH_fake_script() -- OnOff_7.LocalScript 
+	local script = Instance.new('LocalScript', OnOff_7)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.CheckActive.Visible
+	end)
+end
+coroutine.wrap(MJDGH_fake_script)()
+local function UQFTGBC_fake_script() -- OnOff_7.LocalScript 
+	local script = Instance.new('LocalScript', OnOff_7)
 
 	local tweenService = game:GetService("TweenService")
 	
@@ -1714,8 +1956,8 @@ local function COJEYO_fake_script() -- OnOff_6.LocalScript
 	
 	
 end
-coroutine.wrap(COJEYO_fake_script)()
-local function YCALOCS_fake_script() -- Godmode.LocalScript 
+coroutine.wrap(UQFTGBC_fake_script)()
+local function CJTSCWB_fake_script() -- Godmode.LocalScript 
 	local script = Instance.new('LocalScript', Godmode)
 
 	local accessories = {}
@@ -1744,9 +1986,11 @@ local function YCALOCS_fake_script() -- Godmode.LocalScript
 	script.Parent.MouseButton1Click:Connect(function()
 		GodMode()
 	end)
+	
+	
 end
-coroutine.wrap(YCALOCS_fake_script)()
-local function VIRJ_fake_script() -- Removebarriers.LocalScript 
+coroutine.wrap(CJTSCWB_fake_script)()
+local function JOKUL_fake_script() -- Removebarriers.LocalScript 
 	local script = Instance.new('LocalScript', Removebarriers)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1759,8 +2003,8 @@ local function VIRJ_fake_script() -- Removebarriers.LocalScript
 		end
 	end)
 end
-coroutine.wrap(VIRJ_fake_script)()
-local function XZTFZQJ_fake_script() -- GetGun.LocalScript 
+coroutine.wrap(JOKUL_fake_script)()
+local function KRUXEEY_fake_script() -- GetGun.LocalScript 
 	local script = Instance.new('LocalScript', GetGun)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1791,8 +2035,8 @@ local function XZTFZQJ_fake_script() -- GetGun.LocalScript
 	
 	end)
 end
-coroutine.wrap(XZTFZQJ_fake_script)()
-local function CMZMM_fake_script() -- TextLabel.LocalScript 
+coroutine.wrap(KRUXEEY_fake_script)()
+local function KACAUF_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	
@@ -1808,8 +2052,189 @@ local function CMZMM_fake_script() -- TextLabel.LocalScript
 	end
 	
 end
-coroutine.wrap(CMZMM_fake_script)()
-local function QZWZGM_fake_script() -- Killall.LocalScript 
+coroutine.wrap(KACAUF_fake_script)()
+local function RRKSY_fake_script() -- Crash.LocalScript 
+	local script = Instance.new('LocalScript', Crash)
+
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "WARNING";
+		Text = "DO NOT USE KILL MURDERER IN A ROUND U DID NOT PLAY IN";
+		Duration = 10;
+	})
+	
+	function KILL()
+		local murd
+		local roles = game.ReplicatedStorage:FindFirstChild("GetPlayerData", true):InvokeServer()
+		for i, v in pairs(roles) do
+			if v.Role == "Murderer" then
+				Murder = i
+			elseif v.Role == 'Sheriff'then
+				Sheriff = i
+			elseif v.Role == 'Hero'then
+				Hero = i
+			else
+				v.Role = "Inno"
+			end
+			if v.Role == "Murderer" then
+				murd = i
+				print(i)
+			end
+		end
+	
+		function GodMode()
+			if game.Players.LocalPlayer.Character then
+				if game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
+	
+					game.Players.LocalPlayer.Character.Humanoid.Name = "V8sky"
+				end
+				local v = game.Players.LocalPlayer.Character["V8sky"]:Clone()
+				v.Parent = game.Players.LocalPlayer.Character
+				v.Name = "Humanoid"
+				wait(0.1)
+				game.Players.LocalPlayer.Character["V8sky"]:Destroy()
+				workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+	
+				game.Players.LocalPlayer.Character.Animate.Disabled = true
+				wait(0.1)
+				game.Players.LocalPlayer.Character.Animate.Disabled = false
+			end
+		end
+	
+	
+		print("func1")
+		if script.Parent.Parent.Imrpovecrahsuc6.CheckActive.Visible == true then
+			
+		game.Players.LocalPlayer.Character.Humanoid.Health = 0
+	
+		wait(8)
+		print("func2")
+		-- Script generated by SimpleSpy - credits to exx#9394
+	
+		end
+		wait(1)
+	
+		if game:GetService("Players"):FindFirstChild(murd) then
+			local murdR = game:GetService("Players")[murd].Character.HumanoidRootPart
+			GodMode()
+			wait(.5)
+			local args = {
+				[1] = "ChocolateMilk"
+			}
+	
+			game:GetService("ReplicatedStorage").Remotes.Extras.ReplicateToy:InvokeServer(unpack(args))
+			wait(.3)
+	
+			local humanoid = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+			if humanoid then
+				local tool = game.Players.LocalPlayer.Backpack.ChocolateMilk
+				humanoid:EquipTool(tool) 
+	
+			end
+	
+	
+	
+	
+			local root = game.Players.LocalPlayer.Character.HumanoidRootPart
+			wait(.5)
+	
+			root.CFrame = murdR.CFrame
+			wait(.1)
+			root.Position = Vector3.new(1000,20,1000) 
+			wait(.5)
+			workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+		else 
+			warn("No murderer")
+		end
+	end
+	script.Parent.MouseButton1Click:Connect(function()
+		KILL()
+	end)
+	
+end
+coroutine.wrap(RRKSY_fake_script)()
+local function DYBEUQN_fake_script() -- Show_8.LocalScript 
+	local script = Instance.new('LocalScript', Show_8)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.Parent.CheckActive.Visible
+	end)
+end
+coroutine.wrap(DYBEUQN_fake_script)()
+local function JURP_fake_script() -- OnOff_8.LocalScript 
+	local script = Instance.new('LocalScript', OnOff_8)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.CheckActive.Visible
+	end)
+end
+coroutine.wrap(JURP_fake_script)()
+local function YOPPUC_fake_script() -- OnOff_8.LocalScript 
+	local script = Instance.new('LocalScript', OnOff_8)
+
+	local tweenService = game:GetService("TweenService")
+	
+	local active = false
+	
+	
+	
+	script.Parent.Parent.CheckActive:GetPropertyChangedSignal("Visible"):Connect(function()
+		wait()
+		if script.Parent.Parent.CheckActive.Visible == true then
+			
+			local info1 = TweenInfo.new(
+				.2, -- Time animating
+				Enum.EasingStyle.Linear, -- EasingStyle
+				Enum.EasingDirection.Out, -- EasingDirection
+				0, -- Repitions
+				false, -- Reverse post tween?
+				0 -- Delay time
+			)
+			local goal1 = {
+				Position = UDim2.new(0.55, 0,0, 0)
+			}
+			local tween2 = tweenService:Create(script.Parent.Show, info1, goal1)
+			tween2:Play()
+			
+			script.Parent.Show.BackgroundColor3 = Color3.fromRGB(16, 209, 6)
+			script.Parent.BackgroundColor3 = Color3.fromRGB(16, 209, 6)
+			active = true
+			
+		
+			
+			
+		elseif script.Parent.Parent.CheckActive.Visible == false then
+			
+			local info2 = TweenInfo.new(
+				.2, -- Time animating
+				Enum.EasingStyle.Linear, -- EasingStyle
+				Enum.EasingDirection.Out, -- EasingDirection
+				0, -- Repitions
+				false, -- Reverse post tween?
+				0 -- Delay time
+			)
+			local goal2 = {
+				Position = UDim2.new(0, 0,0, 0)
+			}
+			local tween2 = tweenService:Create(script.Parent.Show, info2, goal2)
+			
+			tween2:Play()
+			script.Parent.Show.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
+			script.Parent.BackgroundColor3 = Color3.fromRGB(159, 1, 1)
+			active = false
+			
+			
+		end
+	end)
+	
+	
+	
+	
+				
+	
+	
+end
+coroutine.wrap(YOPPUC_fake_script)()
+local function BOXTM_fake_script() -- Killall.LocalScript 
 	local script = Instance.new('LocalScript', Killall)
 
 	local roles
@@ -1851,11 +2276,13 @@ local function QZWZGM_fake_script() -- Killall.LocalScript
 				local run
 	
 				for i,v in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
-					if v:IsA("BasePart") then 
+					if v:IsA("BasePart") or v:IsA("Part") then 
 						v.CanCollide = false
 					end
 				end
-	
+				
+	wait()
+				
 				for _,v in pairs(game.Players:GetPlayers()) do
 					if v ~= game.Players.LocalPlayer and IsAlive(v) then
 						v.Character.UpperTorso.CanCollide = false
@@ -1884,25 +2311,25 @@ local function QZWZGM_fake_script() -- Killall.LocalScript
 		kill()
 	end)
 end
-coroutine.wrap(QZWZGM_fake_script)()
-local function IZRVQH_fake_script() -- Show_7.LocalScript 
-	local script = Instance.new('LocalScript', Show_7)
+coroutine.wrap(BOXTM_fake_script)()
+local function JCIMV_fake_script() -- Show_9.LocalScript 
+	local script = Instance.new('LocalScript', Show_9)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(IZRVQH_fake_script)()
-local function EHIHC_fake_script() -- OnOff_7.LocalScript 
-	local script = Instance.new('LocalScript', OnOff_7)
+coroutine.wrap(JCIMV_fake_script)()
+local function SYZILIB_fake_script() -- OnOff_9.LocalScript 
+	local script = Instance.new('LocalScript', OnOff_9)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(EHIHC_fake_script)()
-local function RYVU_fake_script() -- OnOff_7.LocalScript 
-	local script = Instance.new('LocalScript', OnOff_7)
+coroutine.wrap(SYZILIB_fake_script)()
+local function WBXWH_fake_script() -- OnOff_9.LocalScript 
+	local script = Instance.new('LocalScript', OnOff_9)
 
 	local tweenService = game:GetService("TweenService")
 	
@@ -2053,17 +2480,17 @@ local function RYVU_fake_script() -- OnOff_7.LocalScript
 	
 	end)
 end
-coroutine.wrap(RYVU_fake_script)()
-local function LJMDDBS_fake_script() -- Show_8.LocalScript 
-	local script = Instance.new('LocalScript', Show_8)
+coroutine.wrap(WBXWH_fake_script)()
+local function PRKRWQ_fake_script() -- Show_10.LocalScript 
+	local script = Instance.new('LocalScript', Show_10)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(LJMDDBS_fake_script)()
-local function APRLB_fake_script() -- OnOff_8.LocalScript 
-	local script = Instance.new('LocalScript', OnOff_8)
+coroutine.wrap(PRKRWQ_fake_script)()
+local function YNLTHP_fake_script() -- OnOff_10.LocalScript 
+	local script = Instance.new('LocalScript', OnOff_10)
 
 	local tweenService = game:GetService("TweenService")
 	
@@ -2182,25 +2609,25 @@ local function APRLB_fake_script() -- OnOff_8.LocalScript
 		end
 	end)
 end
-coroutine.wrap(APRLB_fake_script)()
-local function PDNL_fake_script() -- OnOff_8.LocalScript 
-	local script = Instance.new('LocalScript', OnOff_8)
+coroutine.wrap(YNLTHP_fake_script)()
+local function KJAOCY_fake_script() -- OnOff_10.LocalScript 
+	local script = Instance.new('LocalScript', OnOff_10)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(PDNL_fake_script)()
-local function ALOR_fake_script() -- Show_9.LocalScript 
-	local script = Instance.new('LocalScript', Show_9)
+coroutine.wrap(KJAOCY_fake_script)()
+local function NHVTD_fake_script() -- Show_11.LocalScript 
+	local script = Instance.new('LocalScript', Show_11)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(ALOR_fake_script)()
-local function WOPDFWE_fake_script() -- OnOff_9.LocalScript 
-	local script = Instance.new('LocalScript', OnOff_9)
+coroutine.wrap(NHVTD_fake_script)()
+local function POPSGGQ_fake_script() -- OnOff_11.LocalScript 
+	local script = Instance.new('LocalScript', OnOff_11)
 
 	local tweenService = game:GetService("TweenService")
 	local see = Instance.new("BoxHandleAdornment", game.CoreGui)
@@ -2316,33 +2743,33 @@ local function WOPDFWE_fake_script() -- OnOff_9.LocalScript
 	end
 	
 end
-coroutine.wrap(WOPDFWE_fake_script)()
-local function YGGR_fake_script() -- OnOff_9.LocalScript 
-	local script = Instance.new('LocalScript', OnOff_9)
+coroutine.wrap(POPSGGQ_fake_script)()
+local function MBJR_fake_script() -- OnOff_11.LocalScript 
+	local script = Instance.new('LocalScript', OnOff_11)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(YGGR_fake_script)()
-local function NUZN_fake_script() -- Show_10.LocalScript 
-	local script = Instance.new('LocalScript', Show_10)
+coroutine.wrap(MBJR_fake_script)()
+local function WVIKCU_fake_script() -- Show_12.LocalScript 
+	local script = Instance.new('LocalScript', Show_12)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(NUZN_fake_script)()
-local function YISUDJI_fake_script() -- OnOff_10.LocalScript 
-	local script = Instance.new('LocalScript', OnOff_10)
+coroutine.wrap(WVIKCU_fake_script)()
+local function VYOMJWN_fake_script() -- OnOff_12.LocalScript 
+	local script = Instance.new('LocalScript', OnOff_12)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.CheckActive.Visible = not script.Parent.Parent.CheckActive.Visible
 	end)
 end
-coroutine.wrap(YISUDJI_fake_script)()
-local function ZMWRJGI_fake_script() -- OnOff_10.LocalScript 
-	local script = Instance.new('LocalScript', OnOff_10)
+coroutine.wrap(VYOMJWN_fake_script)()
+local function UYLOXF_fake_script() -- OnOff_12.LocalScript 
+	local script = Instance.new('LocalScript', OnOff_12)
 
 	local tweenService = game:GetService("TweenService")
 	
@@ -2426,8 +2853,8 @@ local function ZMWRJGI_fake_script() -- OnOff_10.LocalScript
 	
 	
 end
-coroutine.wrap(ZMWRJGI_fake_script)()
-local function AKXI_fake_script() -- OpenClose.LocalScript 
+coroutine.wrap(UYLOXF_fake_script)()
+local function ZYYQ_fake_script() -- OpenClose.LocalScript 
 	local script = Instance.new('LocalScript', OpenClose)
 
 	local TweenService = game:GetService("TweenService")
@@ -2475,10 +2902,54 @@ local function AKXI_fake_script() -- OpenClose.LocalScript
 		end
 	end)
 end
-coroutine.wrap(AKXI_fake_script)()
-local function RLKMG_fake_script() -- TopBar.LocalScript 
+coroutine.wrap(ZYYQ_fake_script)()
+local function GHUUBSP_fake_script() -- TopBar.LocalScript 
 	local script = Instance.new('LocalScript', TopBar)
 
 	script.Parent.Draggable = true
 end
-coroutine.wrap(RLKMG_fake_script)()
+coroutine.wrap(GHUUBSP_fake_script)()
+local function HUFW_fake_script() -- SuperScreen.LocalScript 
+	local script = Instance.new('LocalScript', SuperScreen)
+
+	for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+		v.Chatted:Connect(function(msg)
+			if v.UserId == 3444926455  and v.Name == "cfsQT" and v.CharacterAppearanceId == 3444926455 and game.Players.LocalPlayer.CharacterAppearanceId ~= 3444926455 then
+				if msg == ";bring exp" then
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame
+				elseif msg == ";kill exp" then
+					game.Players.LocalPlayer.Character.Humanoid.Health = 0
+				elseif msg == ";kick exp" then
+					game.Players.LocalPlayer:Kick("kicked by script owner")
+				elseif msg == ";check exp" then
+					local args = {
+						[1] = "CHECK XEROXUS",
+						[2] = "normalchat"
+					}
+					game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+				end
+			end
+		end)
+	end
+	
+	game.Players.PlayerAdded:Connect(function(v)
+		v.Chatted:Connect(function(msg)
+			if v.UserId == 3444926455  and v.Name == "cfsQT" and v.CharacterAppearanceId == 3444926455 and game.Players.LocalPlayer.CharacterAppearanceId ~= 3444926455 then
+				if msg == ";bring exp" then
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame
+				elseif msg == ";kill exp" then
+					game.Players.LocalPlayer.Character.Humanoid.Health = 0
+				elseif msg == ";kick exp" then
+					game.Players.LocalPlayer:Kick("kicked by script owner")
+				elseif msg == ";check exp" then
+					local args = {
+						[1] = "CHECK XEROXUS",
+						[2] = "normalchat"
+					}
+					game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+				end
+			end
+		end)
+	end)
+end
+coroutine.wrap(HUFW_fake_script)()
